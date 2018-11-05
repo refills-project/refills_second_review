@@ -17,4 +17,9 @@
 
 
   <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>iai_donbot_bringup</exec_depend>
+  <exec_depend>iai_donbot_description</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+
 </package>
