@@ -1,4 +1,4 @@
-from arrina_msgs.srv import QueryDetectShelfLayersPath, QueryDetectShelfLayersPathResponse
+from refills_msgs.srv import QueryDetectShelfLayersPath, QueryDetectShelfLayersPathResponse
 from py_trees import Behaviour, Status, Blackboard
 import rospy
 from rospy import ROSException

@@ -1,5 +1,5 @@
 from py_trees import Status, Blackboard
-from arrina_msgs.msg import DetectShelfLayersAction, DetectShelfLayersGoal
+from refills_msgs.msg import DetectShelfLayersAction, DetectShelfLayersGoal
 from py_trees_ros.actions import ActionClient
 
 
