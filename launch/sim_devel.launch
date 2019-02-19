@@ -1,6 +1,6 @@
 <launch>
-  <arg name="json_file" default="$(find arrina_rooming_in)/data/donbot_bremen/1_shelf.json" />
-  <arg name="owl_file" default="$(find arrina_rooming_in)/data/donbot_bremen/1_shelf_pp.owl" />
+  <arg name="json_file" default="$(find refills_second_review)/data/donbot_bremen/1_shelf.json" />
+  <arg name="owl_file" default="$(find refills_second_review)/data/donbot_bremen/1_shelf_pp.owl" />
   <arg name="ceiling_height" default="2" />
   <arg name="map_file" default="$(find iai_refills_lab)/maps/refills_lab.yaml" />
  
@@ -10,7 +10,7 @@
 
   <include file="$(find knowrob_refills)/launch/knowrob_refills.launch"/>
 
-  <include file="$(find arrina_perception_interface)/launch/interface.launch">
+  <include file="$(find refills_perception_interface)/launch/interface.launch">
     <arg name="initial_beliefstate_owl" value="$(arg owl_file)" />
     <arg name="json_file" value="$(arg json_file)" />
     <arg name="robosherlock_sim" value="true" />
