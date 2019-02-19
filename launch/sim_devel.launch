@@ -17,4 +17,6 @@
     <arg name="ceiling_height" value="$(arg ceiling_height)" />
   </include>
 
+  <param name="brain/trajectory_sample_period" type="double" value="0.05" />
+
 </launch>

@@ -2,7 +2,7 @@
 import functools
 import rospy
 
-from py_trees import Blackboard, BehaviourTree, Selector, Sequence
+from py_trees import Blackboard, BehaviourTree, Selector, Sequence, Status
 from py_trees.display import render_dot_tree, ascii_tree
 from py_trees.meta import running_is_success
 from py_trees.visitors import SnapshotVisitor
@@ -21,7 +21,7 @@ def cram_plan(debug):
     layer_detection = Sequence('layer detection composite')
     layer_detection.add_child(ConfigureLayerDetectionBehavior('configure layer detection'))
     layer_detection.add_child(BaseNavigationBehavior('move base'))
-    layer_detection.add_child(running_is_success(LayerDetectionBehavior('layer detection')))
+    layer_detection.add_child(running_is_success(LayerDetectionBehavior)('layer detection'))
     layer_detection.add_child(ArmMovementBehavior('move arm'))
     layer_detection.add_child(FinishPerceptionBehavior('finish perception'))
 
@@ -52,10 +52,9 @@ if __name__ == '__main__':
         tree_tick_rate = 20
     tree = cram_plan(debug)
     print('interface running')
-    while not rospy.is_shutdown():
+    while not rospy.is_shutdown() and tree.root.status != Status.SUCCESS:
         try:
             tree.tick()
             rospy.sleep(tree_tick_rate/1000)
         except KeyboardInterrupt:
             break
-    rospy.spin()
