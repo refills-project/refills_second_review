@@ -1,7 +1,0 @@
-<launch>
-  <include file="$(find iai_donbot_bringup)/launch/bringup_donbot.launch" >
-    <arg name="navigation_map" value="$(find iai_karlsruhe)/maps/mymap.yaml" />
-  </include>
-
-  <!--include file="$(find arrina_rooming_in)/launch/rooming_in.launch" /-->
-</launch>
