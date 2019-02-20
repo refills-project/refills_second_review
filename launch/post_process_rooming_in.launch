@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find knowrob_refills)/launch/map.launch" >
+    <arg name="semantic_map" value="package://refills_second_review/data/donbot_bremen/19_shelves.owl" />
+  </include>
+</launch>

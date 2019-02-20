@@ -1,0 +1,8 @@
+<launch>
+  <include file="$(find arrina_rooming_in)/launch/rooming_in.launch" >
+    <arg name="start_knowrob" value="true" />
+    <arg name="start_perception" value="false" />
+    <arg name="load_pickle" value="true" />
+    <arg name="pickle_to_load" value="$(find refills_second_review)/data/donbot_bremen/19_shelves.pickle" />
+  </include>
+</launch>
