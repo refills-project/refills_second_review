@@ -1,1 +1,28 @@
-{ "http://knowrob.org/kb/dm-market.owl#DMShelfW100_XLUZQHSE":"right"}
+{ 
+	"http://knowrob.org/kb/dm-market.owl#DMShelfW100_PLCORHKS":"left",
+	"http://knowrob.org/kb/dm-market.owl#DMShelfW60_DWICGFJM":"left",
+	"http://knowrob.org/kb/dm-market.owl#DMShelfW100_XWEYCFKB":"left",
+	"http://knowrob.org/kb/dm-market.owl#DMShelfW100_HWLJISGD":"left",
+	
+	"http://knowrob.org/kb/dm-market.owl#DMShelfW100_XZUIFGBT":"left",
+	"http://knowrob.org/kb/dm-market.owl#DMShelfW60_JTQKPEMD":"left",
+	"http://knowrob.org/kb/dm-market.owl#DMShelfW100_UNVTWLKJ":"left",
+	"http://knowrob.org/kb/dm-market.owl#DMShelfW100_YVCREXHP":"left",
+	"http://knowrob.org/kb/dm-market.owl#DMShelfW100_WOLQVKTF":"left",
+	"http://knowrob.org/kb/dm-market.owl#DMShelfW100_KJBUYDCW":"left",
+
+
+	"http://knowrob.org/kb/dm-market.owl#DMShelfW100_LVPZTSJX":"left",
+	"http://knowrob.org/kb/dm-market.owl#DMShelfW100_ITCPYWNH":"left",
+	"http://knowrob.org/kb/dm-market.owl#DMShelfW120_IFXUZVLR":"left",
+
+
+	"http://knowrob.org/kb/dm-market.owl#DMShelfW100_CZLKOTJQ":"left",
+	"http://knowrob.org/kb/dm-market.owl#DMShelfW100_NWBPJZLR":"left",
+	"http://knowrob.org/kb/dm-market.owl#DMShelfW100_OLPJGSNE":"left",
+
+
+	"http://knowrob.org/kb/dm-market.owl#DMShelfW100_XCBZVSEM":"left",
+	"http://knowrob.org/kb/dm-market.owl#DMShelfW100_LOMKBJCG":"left",
+	"http://knowrob.org/kb/dm-market.owl#DMShelfW100_TFQZIRMN":"left"
+}
