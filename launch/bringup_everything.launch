@@ -1,0 +1,30 @@
+<launch>
+
+  <include file="$(find iai_donbot_bringup)/launch/bringup_donbot.launch" />
+
+  <arg name="json_file" default="$(find refills_second_review)/data/donbot_bremen/19_shelves_who_work.json" />
+  <arg name="owl_file" default="$(find refills_second_review)/data/donbot_bremen/19_shelves_pp.owl" />
+  <arg name="ceiling_height" default="2" />
+  <arg name="rgb_topic" default="/refills_wrist_camera/image_raw" />
+  <arg name="realsense_topic" default="/rs_camera/color/camera_info" />
+ 
+  <include file="$(find refills_second_review)/launch/giskardpy_donbot.launch"/>
+
+  <include file="$(find rs_refills)/launch/rs_refills.launch"/>
+  <include file="$(find knowrob_refills)/launch/knowrob_refills.launch"/>
+
+  <include file="$(find barcode_finder)/launch/barcode_finder.launch"/>
+  <include file="$(find separator_marker_detector)/launch/detector.launch"/>
+
+  <include file="$(find refills_perception_interface)/launch/interface.launch">
+    <arg name="initial_beliefstate_owl" value="$(arg owl_file)" />
+    <arg name="json_file" value="$(arg json_file)" />
+    <arg name="ceiling_height" value="$(arg ceiling_height)" />
+    <arg name="rgb_topic" value="$(arg rgb_topic)" />
+    <arg name="realsense_topic" value="$(arg realsense_topic)" />
+    <arg name="robosherlock_sim" value="False" />
+  </include>
+
+  <include file="$(find refills_second_review)/launch/diagnostics.launch" />
+
+</launch>
