@@ -10,3 +10,7 @@
     local-name: ur_modern_driver
     uri: https://github.com/nicolacastaman/ur_modern_driver.git
     version: master
+- git: 
+    local-name: iai_robots
+    uri: https://github.com/code-iai/iai_robots.git
+    version: master
