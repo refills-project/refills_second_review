@@ -2,3 +2,11 @@
     local-name: iai_donbot_bringup
     uri: https://github.com/code-iai/iai_donbot.git
     version: master
+- git: 
+    local-name: iai_naive_kinematics_sim
+    uri: https://github.com/code-iai/iai_naive_kinematics_sim.git
+    version: master
+- git: 
+    local-name: ur_modern_driver
+    uri: https://github.com/nicolacastaman/ur_modern_driver.git
+    version: master
