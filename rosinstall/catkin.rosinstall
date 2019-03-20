@@ -14,3 +14,11 @@
     local-name: iai_robots
     uri: https://github.com/code-iai/iai_robots.git
     version: master
+- git: 
+    local-name: iai_common_msgs
+    uri: https://github.com/code-iai/iai_common_msgs.git
+    version: master
+- git: 
+    local-name: omni_teleop
+    uri: https://github.com/code-iai/omni_teleop.git
+    version: master
