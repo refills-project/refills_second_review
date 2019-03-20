@@ -1,0 +1,4 @@
+- git: 
+    local-name: iai_donbot_bringup
+    uri: https://github.com/code-iai/iai_donbot.git
+    version: master
