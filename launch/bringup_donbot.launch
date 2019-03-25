@@ -1,4 +1,0 @@
-<launch>
-  <include file="$(find refills_second_review)/launch/donbot_low_level.launch" />
-
-</launch>

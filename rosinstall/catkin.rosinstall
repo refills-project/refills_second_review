@@ -1,0 +1,40 @@
+- git: 
+    local-name: iai_donbot_bringup
+    uri: https://github.com/code-iai/iai_donbot.git
+    version: master
+- git: 
+    local-name: iai_naive_kinematics_sim
+    uri: https://github.com/code-iai/iai_naive_kinematics_sim.git
+    version: master
+- git: 
+    local-name: ur_modern_driver
+    uri: https://github.com/nicolacastaman/ur_modern_driver.git
+    version: master
+- git: 
+    local-name: iai_robots
+    uri: https://github.com/code-iai/iai_robots.git
+    version: master
+- git: 
+    local-name: iai_common_msgs
+    uri: https://github.com/code-iai/iai_common_msgs.git
+    version: master
+- git: 
+    local-name: omni_teleop
+    uri: https://github.com/code-iai/omni_teleop.git
+    version: master
+- git: 
+    local-name: iai_robot_drivers
+    uri: https://github.com/code-iai/iai_robot_drivers.git
+    version: master
+- git: 
+    local-name: reflexxes_type2
+    uri: https://github.com/code-iai/reflexxes_type2.git
+    version: master
+- git: 
+    local-name: iai_maps
+    uri: https://github.com/code-iai/iai_maps.git
+    version: master
+- git: 
+    local-name: iai_cad_tools
+    uri: https://github.com/code-iai/iai_cad_tools.git
+    version: master

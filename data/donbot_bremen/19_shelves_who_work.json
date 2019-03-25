@@ -1,6 +1,6 @@
 { 
-	"http://knowrob.org/kb/dm-market.owl#DMShelfW100_LOMKBJCG":"right",
-	"http://knowrob.org/kb/dm-market.owl#DMShelfW100_XCBZVSEM":"right",
+	"http://knowrob.org/kb/dm-market.owl#DMShelfW100_XWEYCFKB":"left",
 	"http://knowrob.org/kb/dm-market.owl#DMShelfW100_PLCORHKS":"left",
-	"http://knowrob.org/kb/dm-market.owl#DMShelfW100_XWEYCFKB":"left"	
+	"http://knowrob.org/kb/dm-market.owl#DMShelfW100_XCBZVSEM":"right",
+	"http://knowrob.org/kb/dm-market.owl#DMShelfW100_LOMKBJCG":"right"
 }
