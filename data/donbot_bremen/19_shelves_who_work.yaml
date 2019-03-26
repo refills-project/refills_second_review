@@ -42,7 +42,3 @@ http://knowrob.org/kb/dm-market.owl#DMShelfW100_XCBZVSEM:
           z: -0.655876801993
           w: 0.754867949119
   starting-point: 'http://knowrob.org/kb/dm-market.owl#DMShelfW60_DWICGFJM'
-http://knowrob.org/kb/dm-market.owl#DMShelfW100_LOMKBJCG:
-  side: right
-  via-points: []
-  starting-point: 'http://knowrob.org/kb/dm-market.owl#DMShelfW100_XCBZVSEM'
