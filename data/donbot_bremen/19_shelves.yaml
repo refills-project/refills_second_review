@@ -68,7 +68,7 @@ http://knowrob.org/kb/dm-market.owl#DMShelfW100_WOLQVKTF:
   starting-point: 'http://knowrob.org/kb/dm-market.owl#DMShelfW100_YVCREXHP'
 http://knowrob.org/kb/dm-market.owl#DMShelfW100_KJBUYDCW:
   side: right
-  via-points: 
+  via-points:
     - header: 
         seq: 0
         stamp: 
@@ -77,8 +77,24 @@ http://knowrob.org/kb/dm-market.owl#DMShelfW100_KJBUYDCW:
         frame_id: 'map'
       pose: 
         position: 
-          x: -0.48330539465
-          y: -3.00268483162
+          x: -1.29530382311
+          y: -2.93432792057
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.999959517278
+          w: 0.00899798900149 
+    - header: 
+        seq: 0
+        stamp: 
+          secs: 0.0
+          nsecs:         0
+        frame_id: 'map'
+      pose: 
+        position: 
+          x: -1.29530382311
+          y: -2.93432792057
           z: 0.0
         orientation: 
           x: 0.0
@@ -182,7 +198,7 @@ http://knowrob.org/kb/dm-market.owl#DMShelfW100_LOMKBJCG:
   side: right
   via-points: []
   starting-point: 'http://knowrob.org/kb/dm-market.owl#DMShelfW100_XCBZVSEM'
-http://knowrob.org/kb/dm-market.owl#DMShelfW100_TFQZIRMN:
-  side: left
-  via-points: []
-  starting-point: 'http://knowrob.org/kb/dm-market.owl#DMShelfW100_LOMKBJCG'
+# http://knowrob.org/kb/dm-market.owl#DMShelfW100_TFQZIRMN:
+#   side: left
+#   via-points: []
+#   starting-point: 'http://knowrob.org/kb/dm-market.owl#DMShelfW100_LOMKBJCG'
