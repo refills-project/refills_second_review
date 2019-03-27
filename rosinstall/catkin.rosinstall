@@ -38,3 +38,23 @@
     local-name: iai_cad_tools
     uri: https://github.com/code-iai/iai_cad_tools.git
     version: master
+- git: 
+    local-name: spinnaker_sdk_camera_driver
+    uri: https://github.com/code-iai/spinnaker_sdk_camera_driver.git
+    version: donbot
+- git: 
+    local-name: Barcodes
+    uri: https://github.com/code-iai/Barcodes.git
+    version: master
+- git: 
+    local-name: refills_msgs
+    uri: https://github.com/refills-project/refills_msgs.git
+    version: master
+- git: 
+    local-name: asr_halcon_bridge
+    uri: https://github.com/code-iai/asr_halcon_bridge.git
+    version: master
+- git: 
+    local-name: realsense
+    uri: https://github.com/intel-ros/realsense.git
+    version: development
