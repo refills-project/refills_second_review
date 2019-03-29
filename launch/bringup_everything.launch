@@ -26,5 +26,7 @@
   </include>
 
   <include file="$(find refills_second_review)/launch/diagnostics.launch" />
+ 
+  <node pkg="refills_second_review" type="shelf_name_visualizer" name="shelf_name_visualizer" />
 
 </launch>

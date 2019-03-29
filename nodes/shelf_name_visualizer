@@ -1,0 +1,49 @@
+#!/usr/bin/env python
+
+import rospy
+from std_msgs.msg import ColorRGBA
+from visualization_msgs.msg import MarkerArray, Marker
+
+from refills_perception_interface.knowrob_wrapper import KnowRob
+
+
+class ShelfNameVisualizer(object):
+    def __init__(self):
+        self.knowrob = KnowRob()
+        self.pub = rospy.Publisher('/visualization_marker_array', MarkerArray, queue_size=10)
+        self.vis_msg = self.assemble_viz_msg()
+        self.timer = rospy.Timer(rospy.Duration(1.0), self.callback)
+
+    def callback(self, event):
+        self.pub.publish(self.vis_msg)
+
+    def assemble_viz_msg(self):
+        res = MarkerArray()
+        shelf_ids = self.knowrob.get_shelf_system_ids(filter_with_left_right_dict=False)
+        now = rospy.Time.now()
+        for idx, shelf_id in enumerate(shelf_ids):
+            shelf_pose = self.knowrob.get_shelf_pose(shelf_id)
+            msg = Marker()
+            msg.header.stamp = now
+            msg.header.frame_id = shelf_pose.header.frame_id
+            msg.ns = 'shelf_names'
+            msg.id = idx
+            msg.type = Marker.TEXT_VIEW_FACING
+            msg.action = Marker.ADD
+            msg.pose = shelf_pose.pose
+            msg.pose.position.z = 2.2
+            msg.scale.z = 0.1
+            msg.text = shelf_id.replace('http://knowrob.org/kb/dm-market.owl#', '')
+            msg.color = ColorRGBA(255.0/255.0, 0.0/255.0, 255.0/255.0, 1.0)
+            res.markers.append(msg)
+        return res
+
+if __name__ == '__main__':
+    rospy.init_node('shelf_name_visualizer')
+    my_vis = ShelfNameVisualizer()
+    try:
+        while not rospy.is_shutdown():
+            rospy.spin()
+    except Exception as e:
+        rospy.logerr('{}'.format(e))
+

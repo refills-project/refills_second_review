@@ -23,5 +23,6 @@
   <exec_depend>joint_state_publisher</exec_depend>
   <exec_depend>py_trees_ros</exec_depend>
   <exec_depend>iai_rosout_diagnostics</exec_depend>
+  <exec_depend>refills_perception_interface</exec_depend>
 
 </package>

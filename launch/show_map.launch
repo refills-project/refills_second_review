@@ -9,4 +9,6 @@
     <arg name="semantic_map" value="$(arg owl_file)" />
   </include>
 
+  <node pkg="refills_second_review" type="shelf_name_visualizer" name="shelf_name_visualizer" />
+
 </launch>
