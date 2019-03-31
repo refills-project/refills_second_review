@@ -1,0 +1,6 @@
+<launch>
+  <include file="$(find refills_second_review)/launch/show_map.launch" >
+    <arg name="map_file" value="$(find iai_maps)/maps/dm_karlsruhe_20190331.yaml" />
+    <arg name="owl_file" value="$(find refills_second_review)/data/donbot_karlsruhe/partial01_pp.owl" />
+  </include>
+</launch>
