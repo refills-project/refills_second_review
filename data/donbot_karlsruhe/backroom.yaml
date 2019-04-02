@@ -1,0 +1,16 @@
+# http://knowrob.org/kb/dm-market.owl#DMShelfW100_DRHBOPYX:
+#   side: left
+#   via-points: []
+#   starting-point: None
+http://knowrob.org/kb/dm-market.owl#DMShelfW100_ZMBTDHQI:
+  side: left
+  via-points: []
+  starting-point: None
+http://knowrob.org/kb/dm-market.owl#DMShelfW100_ROPKETDF:
+  side: right
+  via-points: []
+  starting-point: None
+# http://knowrob.org/kb/dm-market.owl#DMShelfW100_BMDVNRGZ:
+#   side: right
+#   via-points: []
+#   starting-point: None
