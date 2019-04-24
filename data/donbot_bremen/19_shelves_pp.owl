@@ -14,6 +14,19 @@
     xmlns:rdf="&rdf;"
     xmlns:xsd="&xsd;"
 >
+
+<owl:NamedIndividual rdf:about="&knowrob;TableFooBar">
+    <rdf:type rdf:resource="&knowrob;EnduringThing-Localized"/>
+    <knowrob:pathToCadModel rdf:datatype="&xsd;string">package://iai_kitchen/meshes/misc/big_table_1.stl</knowrob:pathToCadModel>
+    <knowrob:pose rdf:resource="&knowrob;Transformation_7HUx90mA"/>
+</owl:NamedIndividual>
+
+<knowrob:Pose rdf:about="&knowrob;Transformation_7HUx90mA">
+  <knowrob:quaternion rdf:datatype="&xsd;string">0 0 0 1</knowrob:quaternion>
+  <knowrob:translation rdf:datatype="&xsd;string">-1 2 0.0443802066793</knowrob:translation>
+</knowrob:Pose>
+
+
 <dmshop:DMShelfMarkerLeft rdf:about="&dmshop;DMShelfMarkerLeft_BZXDHRWP"
     knowrob:frameName="DMShelfMarkerLeft_BZXDHRWP">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_85</dmshop:markerId>
