@@ -1,0 +1,9 @@
+<launch>
+
+  <arg name="owl_file" default="$(find refills_second_review)/data/donbot_bremen/scan_with_empty_facings/belief_state2.owl" />
+
+  <include file="$(find refills_second_review)/launch/bringup_everything.launch">
+    <arg name="owl_file" value="$(arg owl_file)" />
+  </include>
+
+</launch>
