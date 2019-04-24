@@ -40,6 +40,10 @@ class CRAM(object):
         self.arm = MoveArm(tip='gripper_tool_frame', root='base_footprint')
         self.arm.giskard.clear_world()
 
+    def spawn_table_in_giskard(self):
+        p = lookup_pose('map', 'TableFooBar')
+        self.arm.giskard.add_mesh('table', 'package://iai_kitchen/meshes/misc/big_table_1.stl', pose=p)
+
     def facing_placing_pose(self, facing_id, object_height):
         facing_pose = PoseStamped()
         facing_pose.header.frame_id = self.kr.get_object_frame_id(facing_id)
@@ -56,6 +60,7 @@ class CRAM(object):
         return facing_pose
 
     def refill(self):
+        self.spawn_table_in_giskard()
         # self.arm.drive_pose()
         self.robo_sherlock.set_ring_light(0)
         for shelf_system_id in self.kr.get_shelf_system_ids():
@@ -65,7 +70,7 @@ class CRAM(object):
                 for i, facing_id in enumerate(sorted(empty_facings,
                                                      key=lambda x: lookup_pose(shelf_layer_frame_id,
                                                                                self.kr.get_object_frame_id(x)).pose.position.x)):
-                    for j in range(1 if i <= 1 else 1):
+                    for j in range(2 if i <= 1 else 2):
                         facing_frame_id = self.kr.get_object_frame_id(facing_id)
                         if lookup_pose('map', facing_frame_id).pose.position.z > 0.6:
                             object_class = self.kr.get_object_of_facing(facing_id)
@@ -141,6 +146,7 @@ class CRAM(object):
                                                                                  [0, 0, 0, 1]])))
         arm_goal.pose = kdl_to_pose(T_map__object * msg_to_kdl(arm_goal))
         arm_goal.pose.position.z = max(TABLE_HEIGHT, arm_goal.pose.position.z)
+        self.arm.giskard.avoid_collision(0.02, body_b='table')
         self.arm.set_and_send_cartesian_goal(arm_goal)
 
         arm_goal = PoseStamped()
@@ -148,6 +154,7 @@ class CRAM(object):
         arm_goal.pose.position.z = .15
         arm_goal.pose.orientation.w = 1
         self.arm.giskard.allow_collision(body_b=self.default_object_name)
+        self.arm.giskard.avoid_collision(0.02, body_b='table')
         self.arm.set_and_send_cartesian_goal(arm_goal)
 
         self.gripper.set_pose(width - 0.01)
