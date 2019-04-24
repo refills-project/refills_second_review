@@ -1,26 +1,10 @@
 http://knowrob.org/kb/dm-market.owl#DMShelfW100_PLCORHKS:
-  side: left
+  side: right
   via-points: []
   starting-point: None
 http://knowrob.org/kb/dm-market.owl#DMShelfW100_XWEYCFKB:
-  side: left
-  via-points: 
-    - header: 
-        seq: 0
-        stamp: 
-          secs: 0.0
-          nsecs:         0
-        frame_id: map
-      pose: 
-        position: 
-          x: 3.0318069458
-          y: -1.01533734798
-          z: 0.0
-        orientation: 
-          x: 0.0
-          y: 0.0
-          z: -0.697185249984
-          w: 0.716891014873
+  side: right
+  via-points: []
   starting-point: 'http://knowrob.org/kb/dm-market.owl#DMShelfW100_PLCORHKS'
 # http://knowrob.org/kb/dm-market.owl#DMShelfW100_XCBZVSEM:
 #   side: right

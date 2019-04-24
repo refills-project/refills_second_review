@@ -3,7 +3,8 @@
   <include file="$(find iai_donbot_bringup)/launch/bringup_donbot.launch" />
 
   <arg name="json_file" default="$(find refills_second_review)/data/donbot_bremen/19_shelves_who_work.yaml" />
-  <arg name="owl_file" default="$(find refills_second_review)/data/donbot_bremen/19_shelves_pp.owl" />
+  <arg name="owl_file" default="$(find refills_second_review)/data/donbot_bremen/19_shelves_pp_pp.owl" />
+  <!-- <arg name="owl_file" default="$(find refills_second_review)/data/donbot_bremen/scan_with_empty_facings/belief_state.owl" /> -->
   <arg name="ceiling_height" default="2" />
   <arg name="rgb_topic" default="/refills_wrist_camera/image_raw" />
   <arg name="realsense_topic" default="/rs_camera/color/camera_info" />
