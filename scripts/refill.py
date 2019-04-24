@@ -11,6 +11,11 @@ from refills_perception_interface.knowrob_wrapper import KnowRob
 from refills_perception_interface.move_arm import MoveArm
 from refills_perception_interface.move_base import MoveBase
 
+# TODO not below 82 during pick up
+# TODO table height = 72
+from refills_perception_interface.move_gripper import MoveGripper
+from refills_perception_interface.robosherlock_wrapper import RoboSherlock
+
 
 class CRAM(object):
     def __init__(self):
@@ -20,27 +25,10 @@ class CRAM(object):
         self.default_object_name = 'box'
         self.kr = KnowRob()
         self.base = MoveBase()
+        self.gripper = MoveGripper()
+        self.robo_sherlock = RoboSherlock(self.kr, name='RoboSherlock_scenario3', check_camera=False)
         self.arm = MoveArm(tip='gripper_tool_frame', root='base_footprint')
         self.arm.giskard.clear_world()
-        self.gripper_pub = rospy.Publisher('/wsg_50/goal_position', PositionCmd, queue_size=10)
-
-    def release_gripper(self):
-        self.set_gripper(self.get_gripper_pose() + .01)
-
-    def open_gripper(self):
-        self.set_gripper(200)
-
-    def close_gripper(self):
-        self.set_gripper(0)
-
-    def set_gripper(self, width):
-        cmd = PositionCmd()
-        cmd.pos = width * 1000
-        self.gripper_pub.publish(cmd)
-        rospy.sleep(0.5)
-
-    def get_gripper_pose(self):
-        return rospy.wait_for_message('wsg_50/state', Status).width
 
     def facing_place_pose(self, facing_id, object_height):
         facing_pose = PoseStamped()
@@ -56,55 +44,64 @@ class CRAM(object):
         return facing_pose
 
     def refill(self):
-        self.arm.drive_pose()
+        # self.arm.drive_pose()
         empty_facings = self.kr.get_all_empty_facings()
         for facing_id in empty_facings:
             facing_frame_id = self.kr.get_object_frame_id(facing_id)
             if lookup_pose('map', facing_frame_id).pose.position.z > 0.4:
                 object_class = self.kr.get_object_of_facing(facing_id)
                 width, depth, height = self.kr.get_object_dimensions(object_class)
-                self.spawn_fake_object(width, depth, height)
+                # self.spawn_fake_object(width, depth, height)
 
-                self.pickup_object(width)
+                self.pickup_object(depth, width, height)
                 self.place_object(facing_id, height)
 
-    def pickup_object(self, object_width):
-
-        self.open_gripper()
+    def goto_see_pose(self):
         base_pose = PoseStamped()
         base_pose.header.frame_id = 'map'
-        base_pose.pose.position = Point(2, 1., 0)
+        base_pose.pose.position = Point(2.8, 1., 0)
         base_pose.pose.orientation = Quaternion(*quaternion_about_axis(np.pi, [0, 0, 1]))
-        self.base.move_other_frame(base_pose, 'gripper_tool_frame')
-        self.arm.place_pose_right()
-        arm_goal = PoseStamped()
-        arm_goal.header.frame_id = 'gripper_tool_frame'
-        arm_goal.pose.position.z = .15
-        arm_goal.pose.orientation.w = 1
-        self.arm.set_and_send_cartesian_goal(arm_goal)
-        base_pose = PoseStamped()
-        base_pose.header.frame_id = 'map'
-        base_pose.pose.position = Point(2, 1.9, 0)
-        base_pose.pose.orientation = Quaternion(*quaternion_about_axis(np.pi, [0, 0, 1]))
-        self.base.move_other_frame(base_pose, 'gripper_tool_frame')
+        # self.base.move_other_frame(base_pose, 'gripper_tool_frame')
+        self.arm.see_pose()
 
-        arm_goal.header.frame_id = 'map'
-        arm_goal.pose.position = Point(2, 2, .82)
-        arm_goal.pose.orientation = Quaternion(*quaternion_from_matrix(np.array([[1, 0, 0, 0],
-                                                                                 [0, 0, 1, 0],
-                                                                                 [0, -1, 0, 0],
-                                                                                 [0, 0, 0, 1]])))
-        self.arm.giskard.allow_collision(body_b=self.default_object_name)
-        self.arm.set_and_send_cartesian_goal(arm_goal)
 
-        self.set_gripper(object_width)
-        self.arm.giskard.attach_object(self.default_object_name, 'gripper_tool_frame')
-        arm_goal.header.frame_id = 'gripper_tool_frame'
-        arm_goal.pose.position = Point(0, .1, -.1)
+    def pickup_object(self, depth, width, height):
+        self.gripper.open()
+        self.goto_see_pose()
+        pose = self.robo_sherlock.see(depth, width, height)
+        self.spawn_fake_object(width, depth, height, pose)
+        pass
+
+
+        # self.arm.place_pose_right()
+        # arm_goal = PoseStamped()
+        # arm_goal.header.frame_id = 'gripper_tool_frame'
+        # arm_goal.pose.position.z = .15
+        # arm_goal.pose.orientation.w = 1
+        # self.arm.set_and_send_cartesian_goal(arm_goal)
+        # base_pose = PoseStamped()
+        # base_pose.header.frame_id = 'map'
+        # base_pose.pose.position = Point(2, 1.9, 0)
+        # base_pose.pose.orientation = Quaternion(*quaternion_about_axis(np.pi, [0, 0, 1]))
+        # self.base.move_other_frame(base_pose, 'gripper_tool_frame')
+        #
+        # arm_goal.header.frame_id = 'map'
+        # arm_goal.pose.position = Point(2, 2, .82)
+        # arm_goal.pose.orientation = Quaternion(*quaternion_from_matrix(np.array([[1, 0, 0, 0],
+        #                                                                          [0, 0, 1, 0],
+        #                                                                          [0, -1, 0, 0],
+        #                                                                          [0, 0, 0, 1]])))
+        # self.arm.giskard.allow_collision(body_b=self.default_object_name)
+        # self.arm.set_and_send_cartesian_goal(arm_goal)
+        #
+        # self.gripper.set_pose(object_width)
+        # self.arm.giskard.attach_object(self.default_object_name, 'gripper_tool_frame')
+        # arm_goal.header.frame_id = 'gripper_tool_frame'
+        # arm_goal.pose.position = Point(0, .1, -.1)
         # self.arm.drive_pose()
 
-    def spawn_fake_object(self, depth, width, height):
-        self.arm.giskard.add_box(size=[depth, width, height], position=[2, 2, .8])
+    def spawn_fake_object(self, depth, width, height, pose):
+        self.arm.giskard.add_box(size=[depth, width, height], pose=pose)
 
     def place_object(self, facing_id, object_height):
         facing_frame_id = self.kr.get_object_frame_id(facing_id)
@@ -122,7 +119,7 @@ class CRAM(object):
         rospy.sleep(.5)
         self.arm.giskard.remove_object(self.default_object_name)
         self.kr.add_objects(facing_id, 1)
-        self.release_gripper()
+        self.gripper.release()
 
         arm_goal = PoseStamped()
         arm_goal.header.frame_id = 'gripper_tool_frame'
