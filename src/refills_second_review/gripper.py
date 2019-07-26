@@ -1,14 +1,23 @@
 from actionlib import SimpleActionClient
-from slipping_control_common.msg import HomeGripperAction, SlippingControlAction, GraspAction, HomeGripperGoal, \
-    GraspGoal, SlippingControlGoal
 
 
 class Gripper(object):
     def __init__(self, active=True):
+        if active:
+            try:
+                from slipping_control_common.msg import HomeGripperAction, SlippingControlAction, GraspAction, HomeGripperGoal, \
+                    GraspGoal, SlippingControlGoal
+                self.home_action = SimpleActionClient('/wsg50/home_gripper_action', HomeGripperAction)
+                self.slipping_control_action = SimpleActionClient('/wsg50/slipping_control_action', SlippingControlAction)
+                self.grasp_action = SimpleActionClient('/wsg50/grasp_action', GraspAction)
+            except:
+                pass
+        else:
+            global HomeGripperGoal, GraspGoal, SlippingControlGoal
+            HomeGripperGoal = None
+            GraspGoal = None
+            SlippingControlGoal = None
         self.active = active
-        self.home_action = SimpleActionClient('/wsg50/home_gripper_action', HomeGripperAction)
-        self.slipping_control_action = SimpleActionClient('/wsg50/slipping_control_action', SlippingControlAction)
-        self.grasp_action = SimpleActionClient('/wsg50/grasp_action', GraspAction)
 
     def home(self):
         if self.active:

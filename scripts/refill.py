@@ -207,7 +207,7 @@ class CRAM(object):
         self.base.move_other_frame(base_pose, 'gripper_tool_frame')
         goal_pose = self.facing_placing_pose(facing_id, object_height)
         self.arm.giskard.allow_all_collisions()
-        self.arm.giskard.set_cart_goal('ur5_shoulder_link', self.default_object_name, goal_pose)
+        self.arm.giskard.set_cart_goal(goal_pose, self.default_object_name, 'ur5_shoulder_link')
         self.arm.giskard.plan_and_execute()
 
 

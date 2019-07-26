@@ -1,6 +1,6 @@
 <launch>
   <arg name="json_file" default="$(find refills_second_review)/data/donbot_bremen/19_shelves_who_work.yaml" />
-  <arg name="owl_file" default="$(find refills_second_review)/data/donbot_bremen/19_shelves_pp.owl" />
+  <arg name="owl_file" default="$(find refills_second_review)/data/donbot_bremen/scan_with_empty_facings/belief_state2.owl" />
   
   <!-- <arg name="json_file" default="$(find refills_second_review)/data/donbot_karlsruhe/partial01.yaml" /> -->
   <!-- <arg name="owl_file" default="$(find refills_second_review)/data/donbot_karlsruhe/partial01_pp_pp.owl" /> -->

@@ -28,7 +28,7 @@ class Plan(object):
         self.with_base = 'odom'
         self.tip = 'refills_tool_frame'
         self.finger = 'refills_finger'
-        self.gripper = Gripper(True)
+        self.gripper = Gripper(False)
         self.giskard = GiskardWrapper()
         rospy.sleep(1)
         self.giskard.clear_world()
@@ -67,8 +67,8 @@ class Plan(object):
         pose.pose.position.y += Dy
         pose.pose.position.z += Dz
         # self.giskard.set_cart_goal(self.without_base, self.tip, pose)
-        self.giskard.set_translation_goal(self.without_base, self.tip, pose, max_speed=10)
-        self.giskard.set_rotation_goal(self.without_base, self.tip, pose, max_speed=100)
+        self.giskard.set_translation_goal(self.without_base, self.tip, pose, max_speed=0.5)
+        self.giskard.set_rotation_goal(self.without_base, self.tip, pose, max_speed=1)
         # self.keep_horizontal(self.finger)
         self.gravity_joint(self.finger)
         self.giskard.plan_and_execute()
@@ -77,7 +77,8 @@ class Plan(object):
         pose = PoseStamped()
         pose.header.frame_id = self.tip
         pose.pose.orientation = Quaternion(*quaternion_about_axis(angle, axis))
-        self.giskard.set_cart_goal(self.without_base, self.tip, pose)
+        self.giskard.set_translation_goal(self.without_base, self.tip, pose, max_speed=0.5)
+        self.giskard.set_rotation_goal(self.without_base, self.tip, pose, max_speed=0.5)
         # self.keep_horizontal(self.finger)
         self.gravity_joint(self.finger)
         self.giskard.plan_and_execute()
