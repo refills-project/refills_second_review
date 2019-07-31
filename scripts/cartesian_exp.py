@@ -13,7 +13,8 @@ from refills_second_review.gripper import Gripper
 class Plan(object):
 
     def __init__(self):
-
+        self.translation_limit = 0.1
+        self.rotation_limit = pi/14
         self.start_conf = {
             'ur5_shoulder_pan_joint': pi,
             'ur5_shoulder_lift_joint': -1,
@@ -28,14 +29,14 @@ class Plan(object):
         self.with_base = 'odom'
         self.tip = 'refills_tool_frame'
         self.finger = 'refills_finger'
-        self.gripper = Gripper(False)
+        self.gripper = Gripper(True)
         self.giskard = GiskardWrapper()
         rospy.sleep(1)
         self.giskard.clear_world()
 
     def reset(self):
 
-        self.giskard.set_joint_goal(self.start_conf)
+        self.giskard.set_joint_goal(self.start_conf, max_speed=self.rotation_limit)
         self.giskard.plan_and_execute()
 
 
@@ -67,8 +68,8 @@ class Plan(object):
         pose.pose.position.y += Dy
         pose.pose.position.z += Dz
         # self.giskard.set_cart_goal(self.without_base, self.tip, pose)
-        self.giskard.set_translation_goal(self.without_base, self.tip, pose, max_speed=0.5)
-        self.giskard.set_rotation_goal(self.without_base, self.tip, pose, max_speed=1)
+        self.giskard.set_translation_goal(self.without_base, self.tip, pose, max_speed=self.translation_limit)
+        self.giskard.set_rotation_goal(self.without_base, self.tip, pose, max_speed=self.rotation_limit)
         # self.keep_horizontal(self.finger)
         self.gravity_joint(self.finger)
         self.giskard.plan_and_execute()
@@ -77,8 +78,8 @@ class Plan(object):
         pose = PoseStamped()
         pose.header.frame_id = self.tip
         pose.pose.orientation = Quaternion(*quaternion_about_axis(angle, axis))
-        self.giskard.set_translation_goal(self.without_base, self.tip, pose, max_speed=0.5)
-        self.giskard.set_rotation_goal(self.without_base, self.tip, pose, max_speed=0.5)
+        self.giskard.set_translation_goal(self.without_base, self.tip, pose, max_speed=self.translation_limit)
+        self.giskard.set_rotation_goal(self.without_base, self.tip, pose, max_speed=self.rotation_limit)
         # self.keep_horizontal(self.finger)
         self.gravity_joint(self.finger)
         self.giskard.plan_and_execute()
@@ -87,7 +88,7 @@ class Plan(object):
         joints = deepcopy(self.start_conf)
         joints['ur5_wrist_3_joint'] += angle
 
-        self.giskard.set_joint_goal(joints)
+        self.giskard.set_joint_goal(joints, max_speed=self.rotation_limit)
         self.giskard.plan_and_execute()
 
 
@@ -95,36 +96,38 @@ class Plan(object):
 
         self.reset()
 
-        self.gripper.home()
+        # self.gripper.home()
         raw_input('press a key')
-        self.gripper.grasp(5)
+        # self.gripper.grasp(5)
         raw_input('press a key')
-        if(gripper_piv):
-            self.gripper.gripper_pivoting()
-        else:
-            self.gripper.slipping_avoidance()
+        # if(gripper_piv):
+        #     self.gripper.gripper_pivoting()
+        # else:
+        #     self.gripper.slipping_avoidance()
 
         self.add_tulip_in_finger()
 
-        self.move(0.2, 0, 0)
-        self.move(-0.2, 0, 0)
-        self.move(0, -0.2, 0)
-        self.move(0, 0.2, 0)
-        self.move(0, 0, 0.2)
-        self.move(0, 0, -0.2)
+        sign = -1
 
-        self.rotate([1, 0, 0], pi/4)
-        self.rotate([1, 0, 0], -pi / 4)
+        self.move(sign*0.2, 0, 0)
+        self.move(sign*-0.2, 0, 0)
+        self.move(0, sign*-0.2, 0)
+        self.move(0, sign*0.2, 0)
+        self.move(0, 0, sign*0.2)
+        self.move(0, 0, sign*-0.2)
 
-        self.rotate_wrist_3(-pi/2)
+        self.rotate([1, 0, 0], sign*pi/4)
+        self.rotate([1, 0, 0], sign*-pi / 4)
 
-        self.rotate([0, 1, 0], pi / 4)
+        self.rotate_wrist_3(sign*-pi/2)
 
-        self.rotate([1, 0, 0], pi / 4)
-        self.rotate([1, 0, 0], -pi / 4)
+        self.rotate([0, 1, 0], sign*pi / 4)
+
+        self.rotate([1, 0, 0], sign*pi / 4)
+        self.rotate([1, 0, 0], sign*-pi / 4)
 
 
-        self.rotate([0, 1, 0], -pi / 4)
+        self.rotate([0, 1, 0], sign*-pi / 4)
 
         self.reset()
 

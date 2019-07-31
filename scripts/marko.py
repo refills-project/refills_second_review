@@ -14,32 +14,35 @@ from utils_for_tests import compare_poses
 
 class Plan(object):
     def __init__(self):
+        self.translation_limit = 0.1
+        self.rotation_limit = np.pi / 14
         self.without_base = 'base_footprint'
         self.with_base = 'odom'
         self.tip = 'refills_tool_frame'
-        self.gripper = Gripper(False)
+        self.gripper = Gripper(True)
         self.giskard = GiskardWrapper()
         rospy.sleep(1)
         self.giskard.clear_world()
 
     def start_config(self):
-        if not self.gripper.active:
-            js = {
-                'ur5_shoulder_pan_joint': -2.09534116068e-16,
-                'ur5_shoulder_lift_joint': -2.17000000194,
-                'ur5_elbow_joint': -1.66,
-                'ur5_wrist_1_joint': -0.2,
-                'ur5_wrist_2_joint': 1.57,
-                'ur5_wrist_3_joint': -1.57,
-            }
-            self.giskard.set_joint_goal(js)
-            self.giskard.plan_and_execute()
+        js = {
+            'ur5_shoulder_pan_joint': 3.14151906967,
+            'ur5_shoulder_lift_joint': -0.999989811574,
+            'ur5_elbow_joint': 1.00003242493,
+            'ur5_wrist_1_joint': -1.57066423098,
+            'ur5_wrist_2_joint': -1.57076150576,
+            'ur5_wrist_3_joint': -1.58478862444,
+        }
+        self.giskard.set_joint_goal(js, max_speed=self.rotation_limit)
+        self.giskard.plan_and_execute()
 
     def move_base(self, x, y, rot):
-        js = {'odom_x_joint': x,
-              'odom_y_joint': y,
-              'odom_z_joint': rot}
-        self.giskard.set_joint_goal(js)
+        p = PoseStamped()
+        p.header.frame_id = 'map'
+        p.pose.position.x = x
+        p.pose.position.y = y
+        p.pose.orientation = Quaternion(*quaternion_about_axis(rot, [0,0,1]))
+        self.giskard.set_cart_goal(self.with_base, self.without_base, p)
         self.giskard.plan_and_execute()
 
     def current_base_goal(self):
@@ -121,37 +124,29 @@ class Plan(object):
         m_R_o = msg_to_kdl(arm_goal)
         m_R_g = m_R_o.M * o_R_g.M
         arm_goal.pose.orientation = kdl_to_quaternion(m_R_g)
-        self.giskard.set_cart_goal(self.without_base, 'refills_finger', arm_goal)
+        arm_goal.pose.position.z = 0.07
+        self.giskard.set_translation_goal(self.without_base, 'refills_finger', arm_goal, max_speed=self.translation_limit)
+        self.giskard.set_rotation_goal(self.without_base, 'refills_finger', arm_goal, max_speed=self.rotation_limit)
         self.giskard.allow_collision([CollisionEntry.ALL], tulip, [CollisionEntry.ALL])
         if start_angle is not None:
-            self.giskard.set_joint_goal({'refills_finger_joint': start_angle})
+            self.giskard.set_joint_goal({'refills_finger_joint': start_angle}, max_speed=self.rotation_limit)
         if not self.giskard.plan_and_execute().error_code == MoveResult.SUCCESS or \
                 not self.goal_reached(arm_goal, 'refills_finger'):
             print('no solution found; stopping test')
             return 'start'
 
+        raw_input('press a key')
         self.gripper.grasp(5)
+        raw_input('press a key')
         self.giskard.attach_object(tulip, 'refills_finger')
-
-        # lift a bit and start pivoting
-        gripper_goal = lookup_pose('map', self.tip)
-        gripper_goal.pose.position.z += 0.02
-        self.giskard.set_cart_goal(self.without_base, self.tip, gripper_goal)
-        self.keep_horizontal(tulip)
-        self.current_base_goal()
-        if not self.giskard.plan_and_execute().error_code == MoveResult.SUCCESS or \
-                not self.goal_reached(gripper_goal, self.tip):
-            print('no solution found; stopping test')
-            return 'mid'
-
-        self.gripper.gripper_pivoting()
 
         # place object
         goal_pose = PoseStamped()
         goal_pose.header.frame_id = 'map'
         goal_pose.pose.position = Point(2.798, 1.849, table_height + 0.07)
         goal_pose.pose.orientation = Quaternion(0, 0, 0, 1)
-        self.giskard.set_cart_goal(self.with_base, tulip, goal_pose)
+        self.giskard.set_translation_goal(self.with_base, tulip, goal_pose, max_speed=self.translation_limit)
+        self.giskard.set_rotation_goal(self.with_base, tulip, goal_pose, max_speed=self.rotation_limit)
         if goal_angle is not None:
             self.giskard.set_joint_goal({'refills_finger_joint': goal_angle})
         self.keep_horizontal(tulip)
@@ -210,13 +205,13 @@ start_angles = np.arange(-np.pi / 2, np.pi / 2, np.pi / 4).tolist() + [np.pi / 2
 goal_angles = np.arange(-np.pi / 2, np.pi / 2, np.pi / 4).tolist() + [np.pi / 2, None]
 table_heights = [0.2, 0.6, 0.72, 0.93, 1.31]
 # for start_angle, goal_angle, table_height in product(start_angles, goal_angles, table_heights):
-for start_angle, goal_angle, table_height in [(None, None, 0.9)]:
+for start_angle, goal_angle, table_height in [(None, None, 0.72)]:
     print('executing {} {} {}'.format(start_angle, goal_angle, table_height))
     planning_time_recorder.reset()
     result = ''
     if start_angle not in failed_starts:
         plan.giskard.clear_world()
-        result = plan.pick_up(start_angle, goal_angle, 1.2)
+        result = plan.pick_up(start_angle, goal_angle, table_height)
         if result == 'start':
             failed_starts.add(start_angle)
     entry = make_entry(start_angle, goal_angle, result == 'ok', planning_time_recorder.planning_time,
