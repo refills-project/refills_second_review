@@ -114,19 +114,17 @@ class Plan(object):
         else:
             print('grasp angle {} expected {}'.format(js, angle))
 
-    def allow_base_y_movement(self, x, rot):
-        p = PoseStamped()
-        p.header.frame_id = 'map'
-        p.pose.position.x = x
-        # p.pose.position.y = y
-        p.pose.orientation = Quaternion(*quaternion_about_axis(rot, [0,0,1]))
-        self.giskard.set_json_goal('CartesianPositionX', **{'root_link': self.with_base,
-                                                            'tip_link': self.without_base,
+    def allow_base_y_movement(self, y, rot):
+        p = lookup_pose(self.without_base, self.with_base)
+        self.giskard.set_json_goal('CartesianPositionY', **{'root_link': self.without_base,
+                                                            'tip_link': self.with_base,
                                                             'goal': convert_ros_message_to_dictionary(p),
                                                             'max_speed': self.translation_limit
                                                             })
+        p = PoseStamped()
+        p.header.frame_id = 'map'
+        p.pose.orientation = Quaternion(*quaternion_about_axis(rot, [0,0,1]))
         self.giskard.set_rotation_goal(self.with_base, self.without_base, p, max_speed=self.rotation_limit)
-        # self.giskard.plan_and_execute()
 
     def pick_up(self, start_angle=0, goal_angle=0, table_height=0.72):
         if start_angle is not None:
@@ -242,7 +240,7 @@ skip = True
 for start_angle, goal_angle, table_height in product(start_angles, goal_angles, table_heights):
 # for start_angle, goal_angle, table_height in [(-np.pi / 4, -np.pi / 2, 0.6)]:
     print('executing {} {} {}'.format(start_angle, goal_angle, table_height))
-    if goal_angle is None and start_angle == -np.pi/4:
+    if start_angle == np.pi/4 and goal_angle == -np.pi/4:
         skip = False
     if skip:
         continue
