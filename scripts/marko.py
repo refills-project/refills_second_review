@@ -1,13 +1,18 @@
-import numpy as np
 import json
+import numpy as np
+from itertools import product
+
 import rospy
 from geometry_msgs.msg import PoseStamped, Point, Quaternion, Vector3Stamped, Vector3
 from giskard_msgs.msg import CollisionEntry, MoveResult
 from rosgraph_msgs.msg import Log
-from tf.transformations import quaternion_about_axis, quaternion_from_matrix
+from rospy_message_converter.message_converter import convert_ros_message_to_dictionary
+from sensor_msgs.msg import JointState
+from tf.transformations import quaternion_about_axis
 
 from giskardpy.python_interface import GiskardWrapper
 from giskardpy.tfwrapper import lookup_pose, np_to_kdl, msg_to_kdl, kdl_to_quaternion
+from giskardpy.utils import to_joint_state_dict2
 from refills_second_review.gripper import Gripper
 from utils_for_tests import compare_poses
 
@@ -19,7 +24,7 @@ class Plan(object):
         self.without_base = 'base_footprint'
         self.with_base = 'odom'
         self.tip = 'refills_tool_frame'
-        self.gripper = Gripper(True)
+        self.gripper = Gripper(False)
         self.giskard = GiskardWrapper()
         rospy.sleep(1)
         self.giskard.clear_world()
@@ -41,7 +46,7 @@ class Plan(object):
         p.header.frame_id = 'map'
         p.pose.position.x = x
         p.pose.position.y = y
-        p.pose.orientation = Quaternion(*quaternion_about_axis(rot, [0,0,1]))
+        p.pose.orientation = Quaternion(*quaternion_about_axis(rot, [0, 0, 1]))
         self.giskard.set_cart_goal(self.with_base, self.without_base, p)
         self.giskard.plan_and_execute()
 
@@ -93,13 +98,35 @@ class Plan(object):
         self.giskard.add_box(name, [0.05, 0.095, 0.09], pose=box_pose)
         return box_pose
 
-    def goal_reached(self, goal, tip):
+    def get_joint_state(self):
+        js = rospy.wait_for_message('/joint_states', JointState)
+        return to_joint_state_dict2(js)
+
+    def goal_reached(self, goal, tip, angle):
         current_pose = lookup_pose(goal.header.frame_id, tip)
+        js = rospy.wait_for_message('/refills_finger/joint_states', JointState).position[0]
         try:
             compare_poses(current_pose.pose, goal.pose, decimal=1)
         except AssertionError:
             return False
-        return True
+        if angle is None or abs(js - angle) < 0.02:
+            return True
+        else:
+            print('grasp angle {} expected {}'.format(js, angle))
+
+    def allow_base_y_movement(self, x, rot):
+        p = PoseStamped()
+        p.header.frame_id = 'map'
+        p.pose.position.x = x
+        # p.pose.position.y = y
+        p.pose.orientation = Quaternion(*quaternion_about_axis(rot, [0,0,1]))
+        self.giskard.set_json_goal('CartesianPositionX', **{'root_link': self.with_base,
+                                                            'tip_link': self.without_base,
+                                                            'goal': convert_ros_message_to_dictionary(p),
+                                                            'max_speed': self.translation_limit
+                                                            })
+        self.giskard.set_rotation_goal(self.with_base, self.without_base, p, max_speed=self.rotation_limit)
+        # self.giskard.plan_and_execute()
 
     def pick_up(self, start_angle=0, goal_angle=0, table_height=0.72):
         if start_angle is not None:
@@ -114,30 +141,34 @@ class Plan(object):
         # self.add_shelf()
         arm_goal = self.add_tulip_on_floor()
         self.start_config()
-        self.move_base(2.9, 0.2, -1.57)
+        planning_time_recorder.reset()
+        self.move_base(3.1, 0.2, -1.57)
 
         # grasp tulip
         o_R_g = np_to_kdl(np.array([[1, 0, 0, 0],
-                                                  [0, 0, -1, 0],
-                                                  [0, 1, 0, 0],
-                                                  [0, 0, 0, 1]]))
+                                    [0, 0, -1, 0],
+                                    [0, 1, 0, 0],
+                                    [0, 0, 0, 1]]))
         m_R_o = msg_to_kdl(arm_goal)
         m_R_g = m_R_o.M * o_R_g.M
         arm_goal.pose.orientation = kdl_to_quaternion(m_R_g)
         arm_goal.pose.position.z = 0.07
-        self.giskard.set_translation_goal(self.without_base, 'refills_finger', arm_goal, max_speed=self.translation_limit)
-        self.giskard.set_rotation_goal(self.without_base, 'refills_finger', arm_goal, max_speed=self.rotation_limit)
+        self.giskard.set_translation_goal(self.with_base, 'refills_finger', arm_goal, max_speed=self.translation_limit)
+        self.giskard.set_rotation_goal(self.with_base, 'refills_finger', arm_goal, max_speed=self.rotation_limit)
+        # js = self.get_joint_state()
+        # js = {k:v for k,v in js.items() if k in ['odom_']}
+        self.allow_base_y_movement(3.1, -1.57)
         self.giskard.allow_collision([CollisionEntry.ALL], tulip, [CollisionEntry.ALL])
         if start_angle is not None:
             self.giskard.set_joint_goal({'refills_finger_joint': start_angle}, max_speed=self.rotation_limit)
         if not self.giskard.plan_and_execute().error_code == MoveResult.SUCCESS or \
-                not self.goal_reached(arm_goal, 'refills_finger'):
+                not self.goal_reached(arm_goal, 'refills_finger', start_angle):
             print('no solution found; stopping test')
             return 'start'
 
-        raw_input('press a key')
+        # raw_input('press a key')
         self.gripper.grasp(5)
-        raw_input('press a key')
+        # raw_input('press a key')
         self.giskard.attach_object(tulip, 'refills_finger')
 
         # place object
@@ -147,11 +178,13 @@ class Plan(object):
         goal_pose.pose.orientation = Quaternion(0, 0, 0, 1)
         self.giskard.set_translation_goal(self.with_base, tulip, goal_pose, max_speed=self.translation_limit)
         self.giskard.set_rotation_goal(self.with_base, tulip, goal_pose, max_speed=self.rotation_limit)
+        self.allow_base_y_movement(3.1, -1.57)
+        # self.giskard.allow_collision(['gripper_base_link'], 'table', [CollisionEntry.ALL])
         if goal_angle is not None:
             self.giskard.set_joint_goal({'refills_finger_joint': goal_angle})
         self.keep_horizontal(tulip)
         if not self.giskard.plan_and_execute().error_code == MoveResult.SUCCESS or \
-                not self.goal_reached(goal_pose, tulip):
+                not self.goal_reached(goal_pose, tulip, goal_angle):
             print('no solution found; stopping test')
             return 'end'
         self.gripper.home()
@@ -204,9 +237,15 @@ planning_time_recorder = PlanningTimeRecorder()
 start_angles = np.arange(-np.pi / 2, np.pi / 2, np.pi / 4).tolist() + [np.pi / 2, None]
 goal_angles = np.arange(-np.pi / 2, np.pi / 2, np.pi / 4).tolist() + [np.pi / 2, None]
 table_heights = [0.2, 0.6, 0.72, 0.93, 1.31]
-# for start_angle, goal_angle, table_height in product(start_angles, goal_angles, table_heights):
-for start_angle, goal_angle, table_height in [(None, None, 0.72)]:
+# table_heights = [0.72]
+skip = True
+for start_angle, goal_angle, table_height in product(start_angles, goal_angles, table_heights):
+# for start_angle, goal_angle, table_height in [(-np.pi / 4, -np.pi / 2, 0.6)]:
     print('executing {} {} {}'.format(start_angle, goal_angle, table_height))
+    if goal_angle is None and start_angle == -np.pi/4:
+        skip = False
+    if skip:
+        continue
     planning_time_recorder.reset()
     result = ''
     if start_angle not in failed_starts:
