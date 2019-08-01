@@ -11,9 +11,10 @@ from sensor_msgs.msg import JointState
 from tf.transformations import quaternion_about_axis
 
 from giskardpy.python_interface import GiskardWrapper
-from giskardpy.tfwrapper import lookup_pose, np_to_kdl, msg_to_kdl, kdl_to_quaternion
+from giskardpy.tfwrapper import lookup_pose, np_to_kdl, msg_to_kdl, kdl_to_quaternion, kdl_to_pose
 from giskardpy.utils import to_joint_state_dict2
 from refills_second_review.gripper import Gripper
+from test_symengine_robot import KDL
 from utils_for_tests import compare_poses
 
 
@@ -28,6 +29,12 @@ class Plan(object):
         self.giskard = GiskardWrapper()
         rospy.sleep(1)
         self.giskard.clear_world()
+
+    def fk(self, root, tip):
+        kdl = KDL(rospy.get_param('robot_description'))
+        kdl_r = kdl.get_robot(root, tip)
+        js = self.get_joint_state()
+        return kdl_to_pose(kdl_r.fk(js))
 
     def start_config(self):
         js = {
@@ -214,14 +221,15 @@ class PlanningTimeRecorder(object):
                 self.planning_time -= float(data.msg.split(' ')[-1])
 
 
-def make_entry(start_angle, goal_angle, success, planning_time, execution_time, table_height):
+def make_entry(start_angle, goal_angle, success, planning_time, execution_time, table_height, chosen_angle):
     return {
         'start_angle': start_angle,
         'goal_angle': goal_angle,
         'success': success,
         'planning_time': planning_time,
         'execution_time': execution_time,
-        'table_height': table_height
+        'table_height': table_height,
+        'chosen_angle': chosen_angle
     }
 
 
@@ -234,9 +242,12 @@ failed_starts = set()
 planning_time_recorder = PlanningTimeRecorder()
 start_angles = np.arange(-np.pi / 2, np.pi / 2, np.pi / 4).tolist() + [np.pi / 2, None]
 goal_angles = np.arange(-np.pi / 2, np.pi / 2, np.pi / 4).tolist() + [np.pi / 2, None]
-table_heights = [0.2, 0.6, 0.72, 0.93, 1.31]
-# table_heights = [0.72]
-skip = True
+# table_heights = [0.2, 0.6, 0.72, 0.93, 1.31]
+table_heights = [0.72]
+
+# combinations = [[-np.pi/4, ]]
+
+skip = False
 for start_angle, goal_angle, table_height in product(start_angles, goal_angles, table_heights):
 # for start_angle, goal_angle, table_height in [(-np.pi / 4, -np.pi / 2, 0.6)]:
     print('executing {} {} {}'.format(start_angle, goal_angle, table_height))
@@ -251,8 +262,9 @@ for start_angle, goal_angle, table_height in product(start_angles, goal_angles, 
         result = plan.pick_up(start_angle, goal_angle, table_height)
         if result == 'start':
             failed_starts.add(start_angle)
+    js = plan.get_joint_state()['refills_finger_joint'] + np.pi/2
     entry = make_entry(start_angle, goal_angle, result == 'ok', planning_time_recorder.planning_time,
-                       planning_time_recorder.traj_length, table_height)
+                       planning_time_recorder.traj_length, table_height, js)
 
     print(entry)
     print('-----------------------------')
