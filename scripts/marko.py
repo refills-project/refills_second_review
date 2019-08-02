@@ -14,7 +14,6 @@ from giskardpy.python_interface import GiskardWrapper
 from giskardpy.tfwrapper import lookup_pose, np_to_kdl, msg_to_kdl, kdl_to_quaternion, kdl_to_pose
 from giskardpy.utils import to_joint_state_dict2
 from refills_second_review.gripper import Gripper
-from test_symengine_robot import KDL
 from utils_for_tests import compare_poses
 
 
@@ -25,16 +24,10 @@ class Plan(object):
         self.without_base = 'base_footprint'
         self.with_base = 'odom'
         self.tip = 'refills_tool_frame'
-        self.gripper = Gripper(False)
+        self.gripper = Gripper(True)
         self.giskard = GiskardWrapper()
         rospy.sleep(1)
         self.giskard.clear_world()
-
-    def fk(self, root, tip):
-        kdl = KDL(rospy.get_param('robot_description'))
-        kdl_r = kdl.get_robot(root, tip)
-        js = self.get_joint_state()
-        return kdl_to_pose(kdl_r.fk(js))
 
     def start_config(self):
         js = {
@@ -144,10 +137,10 @@ class Plan(object):
         self.gripper.home()
         self.add_table(height=table_height)
         # self.add_shelf()
+        self.move_base(3.1, 0.2, -1.57)
         arm_goal = self.add_tulip_on_floor()
         self.start_config()
         planning_time_recorder.reset()
-        self.move_base(3.1, 0.2, -1.57)
 
         # grasp tulip
         o_R_g = np_to_kdl(np.array([[1, 0, 0, 0],
@@ -171,9 +164,9 @@ class Plan(object):
             print('no solution found; stopping test')
             return 'start'
 
-        # raw_input('press a key')
+        raw_input('press a key')
         self.gripper.grasp(5)
-        # raw_input('press a key')
+        raw_input('press a key')
         self.giskard.attach_object(tulip, 'refills_finger')
 
         # place object
@@ -247,27 +240,35 @@ table_heights = [0.72]
 
 # combinations = [[-np.pi/4, ]]
 
-skip = False
-for start_angle, goal_angle, table_height in product(start_angles, goal_angles, table_heights):
-# for start_angle, goal_angle, table_height in [(-np.pi / 4, -np.pi / 2, 0.6)]:
-    print('executing {} {} {}'.format(start_angle, goal_angle, table_height))
-    if start_angle == np.pi/4 and goal_angle == -np.pi/4:
-        skip = False
-    if skip:
-        continue
-    planning_time_recorder.reset()
-    result = ''
-    if start_angle not in failed_starts:
-        plan.giskard.clear_world()
-        result = plan.pick_up(start_angle, goal_angle, table_height)
-        if result == 'start':
-            failed_starts.add(start_angle)
-    js = plan.get_joint_state()['refills_finger_joint'] + np.pi/2
-    entry = make_entry(start_angle, goal_angle, result == 'ok', planning_time_recorder.planning_time,
-                       planning_time_recorder.traj_length, table_height, js)
+with open('log.json2', 'r') as f:
+    matrix = json.load(f)
 
-    print(entry)
-    print('-----------------------------')
-    data.append(entry)
-    with open('log.json', 'w') as f:
-        json.dump(data, f, indent=4, sort_keys=True)
+skip = True
+# for start_angle, goal_angle, table_height in product(start_angles, goal_angles, table_heights):
+# for start_angle, goal_angle, table_height in [(-np.pi/4, np.pi/4, 0.72)]:
+for entry in matrix:
+    start_angle = entry['start_angle']
+    goal_angle = entry['goal_angle']
+    if entry['success'] and (goal_angle is None or not np.isclose(np.array(goal_angle), np.array(np.pi/4))):
+        table_height = entry['table_height']
+        print('executing {} {} {}'.format(start_angle, goal_angle, table_height))
+        if start_angle == np.pi/4 and goal_angle == 0.0:
+            skip = False
+        if skip:
+            continue
+        planning_time_recorder.reset()
+        result = ''
+        if start_angle not in failed_starts:
+            plan.giskard.clear_world()
+            result = plan.pick_up(start_angle, goal_angle, table_height)
+            if result == 'start':
+                failed_starts.add(start_angle)
+        js = plan.get_joint_state()['refills_finger_joint'] + np.pi/2
+        entry = make_entry(start_angle, goal_angle, result == 'ok', planning_time_recorder.planning_time,
+                           planning_time_recorder.traj_length, table_height, js)
+
+        print(entry)
+        print('-----------------------------')
+        data.append(entry)
+        with open('log_real4.json', 'w') as f:
+            json.dump(data, f, indent=4, sort_keys=True)
