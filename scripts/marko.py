@@ -25,7 +25,7 @@ class Plan(object):
         self.without_base = 'base_footprint'
         self.with_base = 'odom'
         self.tip = 'refills_tool_frame'
-        self.gripper = Gripper(False)
+        self.gripper = Gripper(True)
         self.giskard = GiskardWrapper()
         rospy.sleep(1)
         self.giskard.clear_world()
@@ -79,18 +79,24 @@ class Plan(object):
         back = 'back'
         back_p = PoseStamped()
         back_p.header.frame_id = 'map'
-        back_p.pose.position.x = 4
-        back_p.pose.position.y = -1.5
+        back_p.pose.position.x = 4.6
+        back_p.pose.position.y = -0.2
         back_p.pose.position.z = 1
         back_p.pose.orientation = Quaternion(*quaternion_about_axis(np.pi / 2, [0, 0, 1]))
         self.giskard.add_box(back, size=[1, 0.05, 2], pose=back_p)
 
         p = deepcopy(back_p)
-        for i, height in enumerate([0.2, 0.6, 0.93, 1.31]):
-            layer1 = 'layer{}'.format(i)
-            p.pose.position.x = 3.75
-            p.pose.position.z = height
-            self.giskard.add_box(layer1, size=[1, 0.5, 0.02], pose=p)
+        for i, height in enumerate([0.2, 0.6, 0.93, 1.31, 1.56]):
+            if i == 0:
+                layer1 = 'layer{}'.format(i)
+                p.pose.position.x = 4.225
+                p.pose.position.z = height - 0.01125
+                self.giskard.add_box(layer1, size=[1, 0.75, 0.0675], pose=p)
+            else:
+                layer1 = 'layer{}'.format(i)
+                p.pose.position.x = 4.275
+                p.pose.position.z = height - 0.01125
+                self.giskard.add_box(layer1, size=[1, 0.65, 0.0675], pose=p)
         return back_p
 
     def add_tulip_on_floor(self, name='tulip'):
@@ -198,9 +204,9 @@ class Plan(object):
 
         # reset
         self.gripper.home()
-        self.add_table(height=height)
+        # self.add_table(height=height)
         base_pose = self.add_shelf()
-        base_pose.pose.position.x -= 2
+        base_pose.pose.position.x -= 2.2
         base_pose.pose.position.y -= 0.3
         base_pose.pose.position.z = 0
         base_pose.pose.orientation = Quaternion(*quaternion_about_axis(np.pi, [0,0,1]))
@@ -209,7 +215,7 @@ class Plan(object):
 
         # spawn tulip
         base_pose.pose.position.x += 1
-        base_pose.pose.position.y += 0.35
+        base_pose.pose.position.y = -0.195
         base_pose.pose.orientation = Quaternion(*quaternion_about_axis(-np.pi/2, [0,0,1]))
         base_pose.pose.position.z = 0.045  # box height
         self.giskard.add_box(tulip, [0.05, 0.095, 0.09], pose=base_pose)
@@ -238,15 +244,18 @@ class Plan(object):
             print('no solution found; stopping test')
             return 'start'
 
-        # raw_input('press a key')
-        self.gripper.grasp(5)
-        # raw_input('press a key')
+        if self.gripper.active:
+            raw_input('press a key')
+            self.gripper.grasp(5)
+            raw_input('press a key')
         self.giskard.attach_object(tulip, 'refills_finger')
 
         # place object
-        goal1 = deepcopy(arm_goal)
-        goal1.pose.position.z = height+ 0.035
-        goal1.pose.position.x += 0.2
+        goal1 = PoseStamped()
+        goal1.header.frame_id = 'map'
+        goal1.pose.position.x = 3.76
+        goal1.pose.position.y = -0.195
+        goal1.pose.position.z = height + 0.09
         goal1.pose.orientation = deepcopy(base_pose.pose.orientation)
         self.giskard.set_translation_goal(self.with_base, tulip, goal1, max_speed=self.translation_limit)
         self.giskard.set_rotation_goal(self.with_base, tulip, goal1, max_speed=self.rotation_limit)
@@ -255,8 +264,8 @@ class Plan(object):
 
         self.giskard.add_cmd()
         goal2 = deepcopy(goal1)
-        goal2.pose.position.x += 0.4
-        goal2.pose.position.z += 0.045
+        goal2.pose.position.x += 0.3
+        # goal2.pose.position.z += 0.025
         self.giskard.set_translation_goal(self.with_base, tulip, goal2, max_speed=self.translation_limit)
         self.giskard.set_rotation_goal(self.with_base, tulip, goal2, max_speed=self.rotation_limit)
         self.allow_base_y_movement(np.pi)
@@ -366,8 +375,8 @@ def pick_and_place_shelf():
     # table_heights = [0.72]
 
     skip = False
-    for start_angle, goal_angle, height in product(start_angles, goal_angles, table_heights):
-    # for start_angle, goal_angle, table_height in [(-np.pi/4, np.pi/4, 0.72)]:
+    # for start_angle, goal_angle, height in product(start_angles, goal_angles, table_heights):
+    for start_angle, goal_angle, height in [(None, None, 1.31)]:
         print('executing {} {} {}'.format(start_angle, goal_angle, height))
         if start_angle == np.pi/4 and goal_angle == 0.0:
             skip = False
