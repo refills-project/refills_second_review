@@ -4,7 +4,7 @@ from collections import defaultdict
 import pandas as pd
 import numpy as np
 
-with open('log.json', 'r') as f:
+with open('log.json2', 'r') as f:
     data = json.load(f)
 
 start_angles = set()

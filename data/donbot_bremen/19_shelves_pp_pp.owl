@@ -30,7 +30,6 @@
     knowrob:frameName="DMShelfMarkerLeft_BZXDHRWP">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_85</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_RFBVIMUL"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_WCVPNQSY"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerLeft>
 
@@ -38,7 +37,6 @@
     knowrob:frameName="DMShelfMarkerLeft_GKTIENZH">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_39</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_XQWVGUYB"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_WOVFZKTB"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerLeft>
 
@@ -46,7 +44,6 @@
     knowrob:frameName="DMShelfMarkerLeft_HJCIURNB">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_53</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_MTDCXUYI"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_BIXWCPKD"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerLeft>
 
@@ -54,7 +51,6 @@
     knowrob:frameName="DMShelfMarkerLeft_HTOZCRES">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_55</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_BSRKYNOZ"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_ZOWJXDTB"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerLeft>
 
@@ -62,7 +58,6 @@
     knowrob:frameName="DMShelfMarkerLeft_IEGFSYZH">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_35</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_ROKTIZHM"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_RSWYLJNB"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerLeft>
 
@@ -70,7 +65,6 @@
     knowrob:frameName="DMShelfMarkerLeft_IPWULYXG">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_7</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_WFOKLIHZ"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_VMGCTDNH"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerLeft>
 
@@ -78,7 +72,6 @@
     knowrob:frameName="DMShelfMarkerLeft_IVWTNLSP">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_49</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_MYGCTDBH"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_SELOTMGI"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerLeft>
 
@@ -86,7 +79,6 @@
     knowrob:frameName="DMShelfMarkerLeft_KBVDPFUN">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_59</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_IYSETKJN"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_ZJWMPGFY"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerLeft>
 
@@ -94,7 +86,6 @@
     knowrob:frameName="DMShelfMarkerLeft_LIMGWFRO">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_3</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_GIEKWJOH"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_ILTVNRYJ"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerLeft>
 
@@ -102,7 +93,6 @@
     knowrob:frameName="DMShelfMarkerLeft_LJGESXNH">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_11</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_ZJXFWURK"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_QONTJSVD"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerLeft>
 
@@ -110,7 +100,6 @@
     knowrob:frameName="DMShelfMarkerLeft_MLGXBKPJ">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_81</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_VSXDGEFI"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_GOHWDXCF"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerLeft>
 
@@ -118,7 +107,6 @@
     knowrob:frameName="DMShelfMarkerLeft_OUIPKYTE">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_51</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_TRVMYOFL"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_HBRESOCL"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerLeft>
 
@@ -126,7 +114,6 @@
     knowrob:frameName="DMShelfMarkerLeft_OYTVDWBK">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_13</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_DOVTEXKH"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_XNHSWIUB"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerLeft>
 
@@ -134,7 +121,6 @@
     knowrob:frameName="DMShelfMarkerLeft_QGLKUTOY">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_9</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_MWNEOFLD"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_TFUZNHCQ"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerLeft>
 
@@ -142,7 +128,6 @@
     knowrob:frameName="DMShelfMarkerLeft_RXHEPQDB">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_5</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_NSEJVYKZ"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_BRUYTVXK"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerLeft>
 
@@ -150,7 +135,6 @@
     knowrob:frameName="DMShelfMarkerLeft_SQYWLVIH">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_1</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_ZSIBUCQH"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_MUJTZLRC"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerLeft>
 
@@ -158,7 +142,6 @@
     knowrob:frameName="DMShelfMarkerLeft_SVOKXQLF">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_45</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_LOTYDGHR"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_XSWYJLIR"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerLeft>
 
@@ -166,7 +149,6 @@
     knowrob:frameName="DMShelfMarkerLeft_TXPKYFGL">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_37</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_QYMTPZLR"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_XHOIMUSV"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerLeft>
 
@@ -174,7 +156,6 @@
     knowrob:frameName="DMShelfMarkerLeft_XLTZKICW">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_33</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_KNEYXDMB"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_PBLUXYIN"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerLeft>
 
@@ -182,7 +163,6 @@
     knowrob:frameName="DMShelfMarkerRight_BRXCKGVN">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_12</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_BSIHJFEN"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_NRTGWFDU"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerRight>
 
@@ -190,7 +170,6 @@
     knowrob:frameName="DMShelfMarkerRight_BTUKNHVM">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_56</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_LTNSIYGF"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_SJTFICHV"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerRight>
 
@@ -198,7 +177,6 @@
     knowrob:frameName="DMShelfMarkerRight_BVCZWSFM">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_34</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_KDGYTEMH"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_TLXBQGFU"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerRight>
 
@@ -206,7 +184,6 @@
     knowrob:frameName="DMShelfMarkerRight_EDSOQTFW">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_8</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_HMLWXFDZ"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_SPBMZLHI"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerRight>
 
@@ -214,7 +191,6 @@
     knowrob:frameName="DMShelfMarkerRight_INFKDYXB">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_22</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_YUIKVFXE"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_QFENSMCK"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerRight>
 
@@ -222,7 +198,6 @@
     knowrob:frameName="DMShelfMarkerRight_IPKWVCBJ">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_48</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_GTLRFMQB"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_JYDOCMLT"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerRight>
 
@@ -230,7 +205,6 @@
     knowrob:frameName="DMShelfMarkerRight_MITJVRNU">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_26</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_IMTUPGDK"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_UQZCYDSE"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerRight>
 
@@ -238,7 +212,6 @@
     knowrob:frameName="DMShelfMarkerRight_NJZRGQCW">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_80</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_TXVQOBSM"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_ZIUWCLKP"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerRight>
 
@@ -246,7 +219,6 @@
     knowrob:frameName="DMShelfMarkerRight_NTGMFCBR">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_46</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_IPVJMBYR"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_VEYQPZSW"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerRight>
 
@@ -254,7 +226,6 @@
     knowrob:frameName="DMShelfMarkerRight_PJVHXTYW">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_60</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_DGUFMXNR"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_IUOPTYQR"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerRight>
 
@@ -262,7 +233,6 @@
     knowrob:frameName="DMShelfMarkerRight_PUXELHGM">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_58</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_DUBYXTEM"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_DYSJGUMX"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerRight>
 
@@ -270,7 +240,6 @@
     knowrob:frameName="DMShelfMarkerRight_SWYTKJPL">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_86</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_XITKVBQJ"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_NVLMPJKT"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerRight>
 
@@ -278,7 +247,6 @@
     knowrob:frameName="DMShelfMarkerRight_UIDBWTRC">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_82</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_DFLTZWYJ"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_CEZDIHKQ"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerRight>
 
@@ -286,7 +254,6 @@
     knowrob:frameName="DMShelfMarkerRight_UMRNFLKC">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_2</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_BPKILMRJ"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_INMVDPYX"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerRight>
 
@@ -294,7 +261,6 @@
     knowrob:frameName="DMShelfMarkerRight_WEXQLNBR">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_36</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_TNUGBLXY"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_PBKIVOSL"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerRight>
 
@@ -302,7 +268,6 @@
     knowrob:frameName="DMShelfMarkerRight_WIFGHECY">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_6</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_YQTXGHFL"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_VBXJDFSL"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerRight>
 
@@ -310,7 +275,6 @@
     knowrob:frameName="DMShelfMarkerRight_WMEBULIK">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_10</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_KPZFILSH"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_DJMSFTIE"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerRight>
 
@@ -318,7 +282,6 @@
     knowrob:frameName="DMShelfMarkerRight_WNQYKZEC">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_44</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_KSQVHZER"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_GRTJKUSX"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerRight>
 
@@ -326,14 +289,11 @@
     knowrob:frameName="DMShelfMarkerRight_ZCTFOGUN">
   <dmshop:markerId rdf:datatype="&xsd;string">tag_84</dmshop:markerId>
   <knowrob:pose rdf:resource="&knowrob;Pose_JRGBSHMW"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_XNDOLQGF"/>
   <rdf:type rdf:resource="&owl;NamedIndividual"/>
 </dmshop:DMShelfMarkerRight>
 
 <dmshop:DMShelfH160 rdf:about="&dmshop;DMShelfW100_CZLKOTJQ"
     knowrob:frameName="DMShelfW100_CZLKOTJQ">
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_QGVORDTL"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_ZNEGRYSF"/>
   <rdf:type rdf:resource="&dmshop;DMShelfH160W100T6L"/>
   <rdf:type rdf:resource="&dmshop;DMShelfL"/>
   <rdf:type rdf:resource="&dmshop;DMShelfT6"/>
@@ -346,9 +306,6 @@
 
 <dmshop:DMShelfH180 rdf:about="&dmshop;DMShelfW100_HWLJISGD"
     knowrob:frameName="DMShelfW100_HWLJISGD">
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_BKEDRUOT"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_QWPMDYRB"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_YZREIKGF"/>
   <rdf:type rdf:resource="&dmshop;DMShelfH180W100T5L"/>
   <rdf:type rdf:resource="&dmshop;DMShelfL"/>
   <rdf:type rdf:resource="&dmshop;DMShelfT5"/>
@@ -361,8 +318,6 @@
 
 <dmshop:DMShelfH200 rdf:about="&dmshop;DMShelfW100_ITCPYWNH"
     knowrob:frameName="DMShelfW100_ITCPYWNH">
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_TUSRDOEI"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_ZNBMULHC"/>
   <rdf:type rdf:resource="&dmshop;DMShelfH200W100T6L"/>
   <rdf:type rdf:resource="&dmshop;DMShelfL"/>
   <rdf:type rdf:resource="&dmshop;DMShelfT6"/>
@@ -375,8 +330,6 @@
 
 <dmshop:DMShelfH rdf:about="&dmshop;DMShelfW100_KJBUYDCW"
     knowrob:frameName="DMShelfW100_KJBUYDCW">
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_KCSBUWLO"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_UOBRVITX"/>
   <rdf:type rdf:resource="&dmshop;DMShelfH200"/>
   <rdf:type rdf:resource="&dmshop;DMShelfH200W100T7H"/>
   <rdf:type rdf:resource="&dmshop;DMShelfT7"/>
@@ -389,8 +342,6 @@
 
 <dmshop:DMShelfH160 rdf:about="&dmshop;DMShelfW100_LOMKBJCG"
     knowrob:frameName="DMShelfW100_LOMKBJCG">
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_HFGIYNUV"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_NLSTROYM"/>
   <rdf:type rdf:resource="&dmshop;DMShelfH160W100T5L"/>
   <rdf:type rdf:resource="&dmshop;DMShelfL"/>
   <rdf:type rdf:resource="&dmshop;DMShelfT5"/>
@@ -403,8 +354,6 @@
 
 <dmshop:DMShelfH rdf:about="&dmshop;DMShelfW100_LVPZTSJX"
     knowrob:frameName="DMShelfW100_LVPZTSJX">
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_GMFCSZLJ"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_OMRDFBCI"/>
   <rdf:type rdf:resource="&dmshop;DMShelfH200"/>
   <rdf:type rdf:resource="&dmshop;DMShelfH200W100T7H"/>
   <rdf:type rdf:resource="&dmshop;DMShelfT7"/>
@@ -417,9 +366,6 @@
 
 <dmshop:DMShelfH160 rdf:about="&dmshop;DMShelfW100_NWBPJZLR"
     knowrob:frameName="DMShelfW100_NWBPJZLR">
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_DVEKOJYM"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_MGHYQLDB"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_MYORNDWC"/>
   <rdf:type rdf:resource="&dmshop;DMShelfH160W100T6L"/>
   <rdf:type rdf:resource="&dmshop;DMShelfL"/>
   <rdf:type rdf:resource="&dmshop;DMShelfT6"/>
@@ -432,8 +378,6 @@
 
 <dmshop:DMShelfH160 rdf:about="&dmshop;DMShelfW100_OLPJGSNE"
     knowrob:frameName="DMShelfW100_OLPJGSNE">
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_SECXUFLO"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_ZDRJWKVC"/>
   <rdf:type rdf:resource="&dmshop;DMShelfH160W100T6L"/>
   <rdf:type rdf:resource="&dmshop;DMShelfL"/>
   <rdf:type rdf:resource="&dmshop;DMShelfT6"/>
@@ -446,24 +390,6 @@
 
 <dmshop:DMShelfH rdf:about="&dmshop;DMShelfW100_PLCORHKS"
     knowrob:frameName="DMShelfW100_PLCORHKS">
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_BKYDQNXF"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_EKWCOQPI"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_EMCQLUZP"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_HQDWMIFZ"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_JRKMGTID"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_JYTWKPVF"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_KDJPHZVX"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_MDFOSYXV"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_PYHFQDCX"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_QSXZLJYF"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_QZVUNLBS"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_RJLSBDKE"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_TIBWHPLE"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_UVPOKZYI"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_VNEBYSUM"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_WMGSOJNI"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_WQFJRGBS"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_YCHNVJDK"/>
   <rdf:type rdf:resource="&dmshop;DMShelfH200"/>
   <rdf:type rdf:resource="&dmshop;DMShelfH200W100T7H"/>
   <rdf:type rdf:resource="&dmshop;DMShelfT7"/>
@@ -476,8 +402,6 @@
 
 <dmshop:DMShelfH160 rdf:about="&dmshop;DMShelfW100_TFQZIRMN"
     knowrob:frameName="DMShelfW100_TFQZIRMN">
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_PDFULEGN"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_RHSLYFTQ"/>
   <rdf:type rdf:resource="&dmshop;DMShelfH160W100T5L"/>
   <rdf:type rdf:resource="&dmshop;DMShelfL"/>
   <rdf:type rdf:resource="&dmshop;DMShelfT5"/>
@@ -490,8 +414,6 @@
 
 <dmshop:DMShelfH200 rdf:about="&dmshop;DMShelfW100_UNVTWLKJ"
     knowrob:frameName="DMShelfW100_UNVTWLKJ">
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_INJLWZCB"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_WNDRUKVF"/>
   <rdf:type rdf:resource="&dmshop;DMShelfH200W100T6L"/>
   <rdf:type rdf:resource="&dmshop;DMShelfL"/>
   <rdf:type rdf:resource="&dmshop;DMShelfT6"/>
@@ -504,8 +426,6 @@
 
 <dmshop:DMShelfH rdf:about="&dmshop;DMShelfW100_WOLQVKTF"
     knowrob:frameName="DMShelfW100_WOLQVKTF">
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_EIDYXCFS"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_GOMTFELC"/>
   <rdf:type rdf:resource="&dmshop;DMShelfH200"/>
   <rdf:type rdf:resource="&dmshop;DMShelfH200W100T7H"/>
   <rdf:type rdf:resource="&dmshop;DMShelfT7"/>
@@ -518,8 +438,6 @@
 
 <dmshop:DMShelfH160 rdf:about="&dmshop;DMShelfW100_XCBZVSEM"
     knowrob:frameName="DMShelfW100_XCBZVSEM">
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_GFTBNZMJ"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_QHSCEWMF"/>
   <rdf:type rdf:resource="&dmshop;DMShelfH160W100T5L"/>
   <rdf:type rdf:resource="&dmshop;DMShelfL"/>
   <rdf:type rdf:resource="&dmshop;DMShelfT5"/>
@@ -532,17 +450,6 @@
 
 <dmshop:DMShelfH180 rdf:about="&dmshop;DMShelfW100_XWEYCFKB"
     knowrob:frameName="DMShelfW100_XWEYCFKB">
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_EKPOGCNW"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_FHKCBOES"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_FMWBOLQG"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_LXSWKHTR"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_MNJYVROQ"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_PLNQUWJS"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_QEMNYCHF"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_RDNGUIEO"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_RFITHMGP"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_SXCDQPHF"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_VGSDTRLE"/>
   <rdf:type rdf:resource="&dmshop;DMShelfH180W100T5L"/>
   <rdf:type rdf:resource="&dmshop;DMShelfL"/>
   <rdf:type rdf:resource="&dmshop;DMShelfT5"/>
@@ -555,8 +462,6 @@
 
 <dmshop:DMShelfH200 rdf:about="&dmshop;DMShelfW100_XZUIFGBT"
     knowrob:frameName="DMShelfW100_XZUIFGBT">
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_IBHOYPWT"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_MPXIKEOU"/>
   <rdf:type rdf:resource="&dmshop;DMShelfH200W100T6L"/>
   <rdf:type rdf:resource="&dmshop;DMShelfL"/>
   <rdf:type rdf:resource="&dmshop;DMShelfT6"/>
@@ -569,8 +474,6 @@
 
 <dmshop:DMShelfH200 rdf:about="&dmshop;DMShelfW100_YVCREXHP"
     knowrob:frameName="DMShelfW100_YVCREXHP">
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_DBPGHXQL"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_JKUMHFNB"/>
   <rdf:type rdf:resource="&dmshop;DMShelfH200W100T6L"/>
   <rdf:type rdf:resource="&dmshop;DMShelfL"/>
   <rdf:type rdf:resource="&dmshop;DMShelfT6"/>
@@ -583,8 +486,6 @@
 
 <dmshop:DMShelfH200 rdf:about="&dmshop;DMShelfW120_IFXUZVLR"
     knowrob:frameName="DMShelfW120_IFXUZVLR">
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_NZFJQPKD"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_UTRHFIGQ"/>
   <rdf:type rdf:resource="&dmshop;DMShelfH200W120T6L"/>
   <rdf:type rdf:resource="&dmshop;DMShelfL"/>
   <rdf:type rdf:resource="&dmshop;DMShelfT6"/>
@@ -597,9 +498,6 @@
 
 <dmshop:DMShelfH200 rdf:about="&dmshop;DMShelfW60_DWICGFJM"
     knowrob:frameName="DMShelfW60_DWICGFJM">
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_EZXSDLJQ"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_SLCRMJWV"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_WITJSKHB"/>
   <rdf:type rdf:resource="&dmshop;DMShelfH200W60T5L"/>
   <rdf:type rdf:resource="&dmshop;DMShelfL"/>
   <rdf:type rdf:resource="&dmshop;DMShelfT5"/>
@@ -612,8 +510,6 @@
 
 <dmshop:DMShelfH200 rdf:about="&dmshop;DMShelfW60_JTQKPEMD"
     knowrob:frameName="DMShelfW60_JTQKPEMD">
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_FBSNWCHX"/>
-  <knowrob:temporalParts rdf:resource="&knowrob;TemporalPart_SMWBXUFY"/>
   <rdf:type rdf:resource="&dmshop;DMShelfH200W60T6L"/>
   <rdf:type rdf:resource="&dmshop;DMShelfL"/>
   <rdf:type rdf:resource="&dmshop;DMShelfT6"/>
@@ -1143,1488 +1039,5 @@
   <knowrob:quaternion rdf:datatype="&xsd;string">-0.00170406930038 -0.00376829667532 -0.0268911084672 0.999629813668</knowrob:quaternion>
   <knowrob:translation rdf:datatype="&xsd;string">1.2511004608 -2.39958815013 0.0360988227943</knowrob:translation>
 </knowrob:Pose>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_BIXWCPKD">
-  <knowrob:pose rdf:resource="&knowrob;Pose_MTDCXUYI"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.407095"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_BKEDRUOT">
-  <knowrob:pose rdf:resource="&knowrob;Pose_FOIQJMLB"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550754293.528645_1553172673.866945"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_BKYDQNXF">
-  <knowrob:pose rdf:resource="&knowrob;Pose_QVZXPWLB"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1555337353.674049_1555337360.805125"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_BRUYTVXK">
-  <knowrob:pose rdf:resource="&knowrob;Pose_NSEJVYKZ"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.6033669"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_CEZDIHKQ">
-  <knowrob:pose rdf:resource="&knowrob;Pose_DFLTZWYJ"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.7144477"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_DBPGHXQL">
-  <knowrob:pose rdf:resource="&knowrob;Pose_GQMCVZBP"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.5875063_1550754293.3546605"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_DJMSFTIE">
-  <knowrob:pose rdf:resource="&knowrob;Pose_KPZFILSH"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.0636256"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_DVEKOJYM">
-  <knowrob:pose rdf:resource="&knowrob;Pose_PMKWIVLD"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.6269095_1550754292.704084"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_DYSJGUMX">
-  <knowrob:pose rdf:resource="&knowrob;Pose_DUBYXTEM"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.2930517"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_EIDYXCFS">
-  <knowrob:pose rdf:resource="&knowrob;Pose_SGZCDPIT"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550754292.9226632"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_EKPOGCNW">
-  <knowrob:pose rdf:resource="&knowrob;Pose_JYQRFLOU"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.3083115_1550754293.7022521"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_EKWCOQPI">
-  <knowrob:pose rdf:resource="&knowrob;Pose_WBJUPMNO"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1555593246.7877333_1555593285.277644"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_EMCQLUZP">
-  <knowrob:pose rdf:resource="&knowrob;Pose_TCOPYJBQ"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1555509725.1410542_1555509731.2304032"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_EZXSDLJQ">
-  <knowrob:pose rdf:resource="&knowrob;Pose_BVGRQLUT"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.3558662_1550754293.221074"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_FBSNWCHX">
-  <knowrob:pose rdf:resource="&knowrob;Pose_KLRVFTZN"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.4327219_1550754293.1014953"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_FHKCBOES">
-  <knowrob:pose rdf:resource="&knowrob;Pose_JGBRXQNO"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1555337563.308255_1555337632.984304"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_FMWBOLQG">
-  <knowrob:pose rdf:resource="&knowrob;Pose_ZMGDETKW"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1553172706.4586334_1553179806.5457094"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_GFTBNZMJ">
-  <knowrob:pose rdf:resource="&knowrob;Pose_PQOMFXGB"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.3911076_1550754293.8187096"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_GMFCSZLJ">
-  <knowrob:pose rdf:resource="&knowrob;Pose_XEMIUGBP"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.1985147_1550754292.9898658"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_GOHWDXCF">
-  <knowrob:pose rdf:resource="&knowrob;Pose_VSXDGEFI"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.6764114"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_GOMTFELC">
-  <knowrob:pose rdf:resource="&knowrob;Pose_SHPDUTJF"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.5048745_1550754292.9226632"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_GRTJKUSX">
-  <knowrob:pose rdf:resource="&knowrob;Pose_KSQVHZER"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.6052117"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_HBRESOCL">
-  <knowrob:pose rdf:resource="&knowrob;Pose_TRVMYOFL"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.451263"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_HFGIYNUV">
-  <knowrob:pose rdf:resource="&knowrob;Pose_TKBICWNO"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.1614048_1550754293.2938"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_HQDWMIFZ">
-  <knowrob:pose rdf:resource="&knowrob;Pose_SPQEMOGC"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1555509809.8210528_1555509818.0498295"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_IBHOYPWT">
-  <knowrob:pose rdf:resource="&knowrob;Pose_SFRKNZXG"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550754293.1580768"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_ILTVNRYJ">
-  <knowrob:pose rdf:resource="&knowrob;Pose_GIEKWJOH"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.4856718"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_INJLWZCB">
-  <knowrob:pose rdf:resource="&knowrob;Pose_ZLRVPOGS"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.467151_1550754293.0433714"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_INMVDPYX">
-  <knowrob:pose rdf:resource="&knowrob;Pose_BPKILMRJ"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.5720222"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_IUOPTYQR">
-  <knowrob:pose rdf:resource="&knowrob;Pose_DGUFMXNR"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.3392015"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_JKUMHFNB">
-  <knowrob:pose rdf:resource="&knowrob;Pose_TUOQPDVE"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550754293.3546605"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_JRKMGTID">
-  <knowrob:pose rdf:resource="&knowrob;Pose_XKTJSBEY"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1555509735.1410775_1555509763.2570617"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_JYDOCMLT">
-  <knowrob:pose rdf:resource="&knowrob;Pose_GTLRFMQB"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.4530678"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_JYTWKPVF">
-  <knowrob:pose rdf:resource="&knowrob;Pose_BFNDKEYT"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1555509780.0440273_1555509809.8210528"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_KCSBUWLO">
-  <knowrob:pose rdf:resource="&knowrob;Pose_DIHBEFPQ"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550754293.5843763"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_KDJPHZVX">
-  <knowrob:pose rdf:resource="&knowrob;Pose_DSJYHEQB"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1555337371.661532_1555509717.3644395"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_LXSWKHTR">
-  <knowrob:pose rdf:resource="&knowrob;Pose_PLMFTYJZ"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550754293.7022521_1553172706.4586334"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_MDFOSYXV">
-  <knowrob:pose rdf:resource="&knowrob;Pose_TCJSOPIE"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1555509818.0498295_1555593246.7877333"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_MGHYQLDB">
-  <knowrob:pose rdf:resource="&knowrob;Pose_VBHURQFK"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1555337238.0806155"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_MNJYVROQ">
-  <knowrob:pose rdf:resource="&knowrob;Pose_RQUVLDSX"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1555337524.6764472_1555337531.074234"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_MPXIKEOU">
-  <knowrob:pose rdf:resource="&knowrob;Pose_JWPKUNLO"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.1171393_1550754293.1580768"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_MUJTZLRC">
-  <knowrob:pose rdf:resource="&knowrob;Pose_ZSIBUCQH"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.5359085"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_MYORNDWC">
-  <knowrob:pose rdf:resource="&knowrob;Pose_QJMBKLHF"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550754292.704084_1555337238.0806155"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_NLSTROYM">
-  <knowrob:pose rdf:resource="&knowrob;Pose_UDWXCJZR"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550754293.2938"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_NRTGWFDU">
-  <knowrob:pose rdf:resource="&knowrob;Pose_BSIHJFEN"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748464.9788435"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_NVLMPJKT">
-  <knowrob:pose rdf:resource="&knowrob;Pose_XITKVBQJ"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.3736887"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_NZFJQPKD">
-  <knowrob:pose rdf:resource="&knowrob;Pose_YLJUIKVD"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550754292.851657"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_OMRDFBCI">
-  <knowrob:pose rdf:resource="&knowrob;Pose_UCVWQBME"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550754292.9898658"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_PBKIVOSL">
-  <knowrob:pose rdf:resource="&knowrob;Pose_TNUGBLXY"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.2159991"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_PBLUXYIN">
-  <knowrob:pose rdf:resource="&knowrob;Pose_KNEYXDMB"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.1795695"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_PDFULEGN">
-  <knowrob:pose rdf:resource="&knowrob;Pose_WEQOGTDC"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550754293.760071"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_PLNQUWJS">
-  <knowrob:pose rdf:resource="&knowrob;Pose_FNUKCDVT"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1553179806.5457094_1555337519.391938"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_PYHFQDCX">
-  <knowrob:pose rdf:resource="&knowrob;Pose_JPDCWHNZ"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.6948466_1550754292.7767437"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_QEMNYCHF">
-  <knowrob:pose rdf:resource="&knowrob;Pose_PTXYVZCF"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1555337519.391938_1555337524.6764472"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_QFENSMCK">
-  <knowrob:pose rdf:resource="&knowrob;Pose_YUIKVFXE"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.4086132"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_QGVORDTL">
-  <knowrob:pose rdf:resource="&knowrob;Pose_LUBKIHGZ"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.6594567_1550754293.4138496"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_QHSCEWMF">
-  <knowrob:pose rdf:resource="&knowrob;Pose_IZOFEVCP"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550754293.8187096"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_QONTJSVD">
-  <knowrob:pose rdf:resource="&knowrob;Pose_ZJXFWURK"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.1005907"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_QSXZLJYF">
-  <knowrob:pose rdf:resource="&knowrob;Pose_YPRMESBU"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1555593285.277644"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_QWPMDYRB">
-  <knowrob:pose rdf:resource="&knowrob;Pose_ZBHUFWMC"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1553172673.866945"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_QZVUNLBS">
-  <knowrob:pose rdf:resource="&knowrob;Pose_VRFWITSM"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1555509763.2570617_1555509768.7280545"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_RDNGUIEO">
-  <knowrob:pose rdf:resource="&knowrob;Pose_QHFVGIXU"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1555337531.074234_1555337563.308255"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_RFITHMGP">
-  <knowrob:pose rdf:resource="&knowrob;Pose_VSMRCOKP"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1555588242.2577033"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_RHSLYFTQ">
-  <knowrob:pose rdf:resource="&knowrob;Pose_IVEKQURM"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.734562_1550754293.760071"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_RJLSBDKE">
-  <knowrob:pose rdf:resource="&knowrob;Pose_XGPHCUNJ"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1553172124.1119442_1555337353.674049"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_RSWYLJNB">
-  <knowrob:pose rdf:resource="&knowrob;Pose_ROKTIZHM"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.2134194"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_SECXUFLO">
-  <knowrob:pose rdf:resource="&knowrob;Pose_ZDWGEJMX"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550754293.643851"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_SELOTMGI">
-  <knowrob:pose rdf:resource="&knowrob;Pose_MYGCTDBH"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.5692642"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_SJTFICHV">
-  <knowrob:pose rdf:resource="&knowrob;Pose_LTNSIYGF"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.2534952"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_SLCRMJWV">
-  <knowrob:pose rdf:resource="&knowrob;Pose_YVNQEPBJ"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550754293.221074_1553172616.72967"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_SMWBXUFY">
-  <knowrob:pose rdf:resource="&knowrob;Pose_JVPXKQUF"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550754293.1014953"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_SPBMZLHI">
-  <knowrob:pose rdf:resource="&knowrob;Pose_HMLWXFDZ"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.4885676"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_SXCDQPHF">
-  <knowrob:pose rdf:resource="&knowrob;Pose_CTZBEOIX"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1555337632.984304_1555588236.9433203"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_TFUZNHCQ">
-  <knowrob:pose rdf:resource="&knowrob;Pose_MWNEOFLD"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.291177"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_TIBWHPLE">
-  <knowrob:pose rdf:resource="&knowrob;Pose_FQEMCZID"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1555509768.7280545_1555509772.6646192"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_TLXBQGFU">
-  <knowrob:pose rdf:resource="&knowrob;Pose_KDGYTEMH"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.181996"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_TUSRDOEI">
-  <knowrob:pose rdf:resource="&knowrob;Pose_PYNJDMLX"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.2359734_1550754293.4719357"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_UOBRVITX">
-  <knowrob:pose rdf:resource="&knowrob;Pose_ZHSNXVTR"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.0407817_1550754293.5843763"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_UQZCYDSE">
-  <knowrob:pose rdf:resource="&knowrob;Pose_IMTUPGDK"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.1021786"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_UTRHFIGQ">
-  <knowrob:pose rdf:resource="&knowrob;Pose_TRZIYQMN"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.2702296_1550754292.851657"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_UVPOKZYI">
-  <knowrob:pose rdf:resource="&knowrob;Pose_ZPMSNWUL"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550754292.7767437_1553172124.1119442"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_VBXJDFSL">
-  <knowrob:pose rdf:resource="&knowrob;Pose_YQTXGHFL"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.6436515"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_VEYQPZSW">
-  <knowrob:pose rdf:resource="&knowrob;Pose_IPVJMBYR"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.538852"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_VGSDTRLE">
-  <knowrob:pose rdf:resource="&knowrob;Pose_BCLIDRVS"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1555588236.9433203_1555588242.2577033"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_VMGCTDNH">
-  <knowrob:pose rdf:resource="&knowrob;Pose_WFOKLIHZ"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.6418412"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_VNEBYSUM">
-  <knowrob:pose rdf:resource="&knowrob;Pose_NIZFVCDO"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1555509731.2304032_1555509735.1410775"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_WCVPNQSY">
-  <knowrob:pose rdf:resource="&knowrob;Pose_RFBVIMUL"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.7122638"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_WITJSKHB">
-  <knowrob:pose rdf:resource="&knowrob;Pose_TKNVQSBH"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1553172616.72967"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_WMGSOJNI">
-  <knowrob:pose rdf:resource="&knowrob;Pose_MZHCJRVK"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1555337360.805125_1555337371.661532"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_WNDRUKVF">
-  <knowrob:pose rdf:resource="&knowrob;Pose_GKZSDEPB"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550754293.0433714"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_WOVFZKTB">
-  <knowrob:pose rdf:resource="&knowrob;Pose_XQWVGUYB"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.1358376"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_WQFJRGBS">
-  <knowrob:pose rdf:resource="&knowrob;Pose_LOHVJRSP"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1555509717.3644395_1555509725.1410542"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_XHOIMUSV">
-  <knowrob:pose rdf:resource="&knowrob;Pose_QYMTPZLR"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.2511487"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_XNDOLQGF">
-  <knowrob:pose rdf:resource="&knowrob;Pose_JRGBSHMW"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.6789103"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_XNHSWIUB">
-  <knowrob:pose rdf:resource="&knowrob;Pose_DOVTEXKH"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748464.9769342"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_XSWYJLIR">
-  <knowrob:pose rdf:resource="&knowrob;Pose_LOTYDGHR"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.060816"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_YCHNVJDK">
-  <knowrob:pose rdf:resource="&knowrob;Pose_MBWFULVN"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1555509772.6646192_1555509780.0440273"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_YZREIKGF">
-  <knowrob:pose rdf:resource="&knowrob;Pose_QXJOIEPG"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.0832105_1550754293.528645"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_ZDRJWKVC">
-  <knowrob:pose rdf:resource="&knowrob;Pose_IDEZMTOU"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.5545323_1550754293.643851"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_ZIUWCLKP">
-  <knowrob:pose rdf:resource="&knowrob;Pose_TXVQOBSM"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.1404772"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_ZJWMPGFY">
-  <knowrob:pose rdf:resource="&knowrob;Pose_IYSETKJN"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.336042"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_ZNBMULHC">
-  <knowrob:pose rdf:resource="&knowrob;Pose_HEQOWUBG"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550754293.4719357"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_ZNEGRYSF">
-  <knowrob:pose rdf:resource="&knowrob;Pose_VHJUGOIP"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550754293.4138496"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TemporalPart rdf:about="&knowrob;TemporalPart_ZOWJXDTB">
-  <knowrob:pose rdf:resource="&knowrob;Pose_BSRKYNOZ"/>
-  <knowrob:temporalExtend rdf:resource="&knowrob;TimeInterval_1550748465.3709311"/>
-  <knowrob:temporalProperty rdf:resource="&knowrob;pose"/>
-</knowrob:TemporalPart>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748464.9769342">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748464.9769342"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748464.9788435">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748464.9788435"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.0407817">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.0407817"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.0407817_1550754293.5843763">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1550754293.5843763"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.0407817"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.060816">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.060816"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.0636256">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.0636256"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.0832105">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.0832105"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.0832105_1550754293.528645">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1550754293.528645"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.0832105"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.1005907">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.1005907"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.1021786">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.1021786"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.1171393">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.1171393"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.1171393_1550754293.1580768">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1550754293.1580768"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.1171393"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.1358376">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.1358376"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.1404772">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.1404772"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.1614048">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.1614048"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.1614048_1550754293.2938">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1550754293.2938"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.1614048"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.1795695">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.1795695"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.181996">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.181996"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.1985147">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.1985147"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.1985147_1550754292.9898658">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1550754292.9898658"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.1985147"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.2134194">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.2134194"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.2159991">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.2159991"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.2359734">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.2359734"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.2359734_1550754293.4719357">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1550754293.4719357"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.2359734"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.2511487">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.2511487"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.2534952">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.2534952"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.2702296">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.2702296"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.2702296_1550754292.851657">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1550754292.851657"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.2702296"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.291177">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.291177"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.2930517">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.2930517"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.3083115">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.3083115"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.3083115_1550754293.7022521">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1550754293.7022521"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.3083115"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.336042">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.336042"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.3392015">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.3392015"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.3558662">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.3558662"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.3558662_1550754293.221074">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1550754293.221074"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.3558662"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.3709311">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.3709311"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.3736887">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.3736887"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.3911076">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.3911076"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.3911076_1550754293.8187096">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1550754293.8187096"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.3911076"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.407095">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.407095"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.4086132">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.4086132"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.4327219">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.4327219"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.4327219_1550754293.1014953">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1550754293.1014953"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.4327219"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.451263">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.451263"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.4530678">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.4530678"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.467151">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.467151"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.467151_1550754293.0433714">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1550754293.0433714"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.467151"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.4856718">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.4856718"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.4885676">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.4885676"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.5048745">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.5048745"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.5048745_1550754292.9226632">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1550754292.9226632"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.5048745"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.5359085">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.5359085"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.538852">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.538852"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.5545323">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.5545323"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.5545323_1550754293.643851">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1550754293.643851"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.5545323"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.5692642">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.5692642"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.5720222">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.5720222"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.5875063">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.5875063"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.5875063_1550754293.3546605">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1550754293.3546605"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.5875063"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.6033669">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.6033669"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.6052117">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.6052117"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.6269095">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.6269095"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.6269095_1550754292.704084">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1550754292.704084"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.6269095"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.6418412">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.6418412"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.6436515">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.6436515"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.6594567">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.6594567"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.6594567_1550754293.4138496">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1550754293.4138496"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.6594567"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.6764114">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.6764114"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.6789103">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.6789103"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.6948466">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.6948466"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.6948466_1550754292.7767437">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1550754292.7767437"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.6948466"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.7122638">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.7122638"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.7144477">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.7144477"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.734562">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.734562"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550748465.734562_1550754293.760071">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1550754293.760071"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550748465.734562"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550754292.704084">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550754292.704084"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550754292.704084_1555337238.0806155">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1555337238.0806155"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550754292.704084"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550754292.7767437">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550754292.7767437"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550754292.7767437_1553172124.1119442">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1553172124.1119442"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550754292.7767437"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550754292.851657">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550754292.851657"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550754292.9226632">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550754292.9226632"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550754292.9898658">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550754292.9898658"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550754293.0433714">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550754293.0433714"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550754293.1014953">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550754293.1014953"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550754293.1580768">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550754293.1580768"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550754293.221074">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550754293.221074"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550754293.221074_1553172616.72967">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1553172616.72967"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550754293.221074"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550754293.2938">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550754293.2938"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550754293.3546605">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550754293.3546605"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550754293.4138496">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550754293.4138496"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550754293.4719357">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550754293.4719357"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550754293.528645">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550754293.528645"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550754293.528645_1553172673.866945">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1553172673.866945"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550754293.528645"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550754293.5843763">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550754293.5843763"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550754293.643851">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550754293.643851"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550754293.7022521">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550754293.7022521"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550754293.7022521_1553172706.4586334">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1553172706.4586334"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550754293.7022521"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550754293.760071">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550754293.760071"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1550754293.8187096">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1550754293.8187096"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1553172124.1119442">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1553172124.1119442"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1553172124.1119442_1555337353.674049">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1555337353.674049"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1553172124.1119442"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1553172616.72967">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1553172616.72967"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1553172673.866945">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1553172673.866945"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1553172706.4586334">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1553172706.4586334"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1553172706.4586334_1553179806.5457094">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1553179806.5457094"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1553172706.4586334"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1553179806.5457094">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1553179806.5457094"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1553179806.5457094_1555337519.391938">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1555337519.391938"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1553179806.5457094"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555337238.0806155">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555337238.0806155"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555337353.674049">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555337353.674049"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555337353.674049_1555337360.805125">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1555337360.805125"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555337353.674049"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555337360.805125">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555337360.805125"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555337360.805125_1555337371.661532">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1555337371.661532"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555337360.805125"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555337371.661532">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555337371.661532"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555337371.661532_1555509717.3644395">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1555509717.3644395"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555337371.661532"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555337519.391938">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555337519.391938"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555337519.391938_1555337524.6764472">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1555337524.6764472"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555337519.391938"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555337524.6764472">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555337524.6764472"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555337524.6764472_1555337531.074234">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1555337531.074234"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555337524.6764472"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555337531.074234">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555337531.074234"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555337531.074234_1555337563.308255">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1555337563.308255"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555337531.074234"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555337563.308255">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555337563.308255"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555337563.308255_1555337632.984304">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1555337632.984304"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555337563.308255"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555337632.984304">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555337632.984304"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555337632.984304_1555588236.9433203">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1555588236.9433203"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555337632.984304"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555509717.3644395">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555509717.3644395"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555509717.3644395_1555509725.1410542">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1555509725.1410542"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555509717.3644395"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555509725.1410542">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555509725.1410542"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555509725.1410542_1555509731.2304032">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1555509731.2304032"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555509725.1410542"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555509731.2304032">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555509731.2304032"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555509731.2304032_1555509735.1410775">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1555509735.1410775"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555509731.2304032"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555509735.1410775">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555509735.1410775"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555509735.1410775_1555509763.2570617">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1555509763.2570617"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555509735.1410775"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555509763.2570617">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555509763.2570617"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555509763.2570617_1555509768.7280545">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1555509768.7280545"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555509763.2570617"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555509768.7280545">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555509768.7280545"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555509768.7280545_1555509772.6646192">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1555509772.6646192"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555509768.7280545"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555509772.6646192">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555509772.6646192"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555509772.6646192_1555509780.0440273">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1555509780.0440273"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555509772.6646192"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555509780.0440273">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555509780.0440273"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555509780.0440273_1555509809.8210528">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1555509809.8210528"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555509780.0440273"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555509809.8210528">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555509809.8210528"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555509809.8210528_1555509818.0498295">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1555509818.0498295"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555509809.8210528"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555509818.0498295">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555509818.0498295"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555509818.0498295_1555593246.7877333">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1555593246.7877333"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555509818.0498295"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555588236.9433203">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555588236.9433203"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555588236.9433203_1555588242.2577033">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1555588242.2577033"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555588236.9433203"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555588242.2577033">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555588242.2577033"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555593246.7877333">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555593246.7877333"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555593246.7877333_1555593285.277644">
-  <knowrob:endTime rdf:resource="&knowrob;timepoint_1555593285.277644"/>
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555593246.7877333"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimeInterval rdf:about="&knowrob;TimeInterval_1555593285.277644">
-  <knowrob:startTime rdf:resource="&knowrob;timepoint_1555593285.277644"/>
-</knowrob:TimeInterval>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748464.9769342"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748464.9788435"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.0407817"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.060816"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.0636256"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.0832105"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.1005907"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.1021786"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.1171393"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.1358376"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.1404772"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.1614048"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.1795695"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.181996"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.1985147"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.2134194"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.2159991"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.2359734"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.2511487"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.2534952"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.2702296"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.291177"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.2930517"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.3083115"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.336042"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.3392015"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.3558662"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.3709311"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.3736887"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.3911076"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.407095"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.4086132"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.4327219"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.451263"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.4530678"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.467151"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.4856718"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.4885676"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.5048745"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.5359085"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.538852"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.5545323"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.5692642"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.5720222"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.5875063"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.6033669"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.6052117"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.6269095"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.6418412"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.6436515"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.6594567"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.6764114"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.6789103"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.6948466"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.7122638"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.7144477"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550748465.734562"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550754292.704084"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550754292.7767437"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550754292.851657"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550754292.9226632"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550754292.9898658"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550754293.0433714"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550754293.1014953"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550754293.1580768"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550754293.221074"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550754293.2938"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550754293.3546605"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550754293.4138496"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550754293.4719357"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550754293.528645"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550754293.5843763"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550754293.643851"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550754293.7022521"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550754293.760071"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1550754293.8187096"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1553172124.1119442"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1553172616.72967"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1553172673.866945"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1553172706.4586334"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1553179806.5457094"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1555337238.0806155"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1555337353.674049"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1555337360.805125"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1555337371.661532"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1555337519.391938"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1555337524.6764472"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1555337531.074234"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1555337563.308255"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1555337632.984304"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1555509717.3644395"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1555509725.1410542"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1555509731.2304032"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1555509735.1410775"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1555509763.2570617"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1555509768.7280545"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1555509772.6646192"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1555509780.0440273"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1555509809.8210528"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1555509818.0498295"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1555588236.9433203"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1555588242.2577033"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1555593246.7877333"/>
-
-<knowrob:TimePoint rdf:about="&knowrob;timepoint_1555593285.277644"/>
 
 </rdf:RDF>

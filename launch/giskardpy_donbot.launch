@@ -7,7 +7,7 @@
     <param name="enable_gui" value="$(arg gui)"/>
     <rosparam param="enable_collision_marker">True</rosparam>
     <rosparam param="enable_visualization">True</rosparam>
-    <rosparam param="plot_trajectory">False</rosparam>
+    <rosparam param="plot_trajectory">True</rosparam>
     <rosparam param="debug">False</rosparam>
     <rosparam param="map_frame">map</rosparam>
     <rosparam param="joint_convergence_threshold">0.001</rosparam>
@@ -23,14 +23,17 @@
     <rosparam param="collision_time_threshold">15</rosparam>
     <rosparam param="tree_tick_rate">0.1</rosparam>
     <rosparam param="slerp">True</rosparam>
-    <remap from="/whole_body_controller/follow_joint_trajectory" to="/follow_joint_trajectory" />
-    <remap from="/whole_body_controller/state" to="/fake_state"/>
+    <!-- <remap from="/whole_body_controller/follow_joint_trajectory" to="whole_body_controller/body/follow_joint_trajectory" /> -->
+    <!-- <remap from="/whole_body_controller/state" to="/fake_state"/> -->
+    <remap from="/whole_body_controller/follow_joint_trajectory" to="whole_body_controller/base/follow_joint_trajectory" />
+    <remap from="/whole_body_controller/state" to="/whole_body_controller/base/state"/>
   </node>
 
   <node pkg="giskardpy" type="interactive_marker.py" name="giskard_interactive_marker" output="screen">
     <rosparam param="enable_self_collision">False</rosparam>
     <rosparam param="interactive_marker_chains">
      - [base_footprint, gripper_tool_frame]
+     - [odom, base_footprint]
      - [ur5_shoulder_link, camera_link]
     </rosparam>
   </node>

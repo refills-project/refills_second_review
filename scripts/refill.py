@@ -51,7 +51,7 @@ class CRAM(object):
         facing_height = self.kr.get_facing_height(facing_id)
         facing_pose.pose.position.y = -facing_depth / 2. - 0.1
         facing_pose.pose.position.z = -facing_height / 2. + object_height / 2 + .03
-        facing_pose.pose.position.x = 0.01 # TODO magic
+        facing_pose.pose.position.x = 0.03 # TODO magic
         facing_pose.pose.orientation = Quaternion(0, 0, 0, 1)
         # facing_pose.pose.orientation = Quaternion(*quaternion_from_matrix(np.array([[1, 0, 0, 0],
         #                                                                             [0, 0, 1, 0],
@@ -70,7 +70,7 @@ class CRAM(object):
                 for i, facing_id in enumerate(sorted(empty_facings,
                                                      key=lambda x: lookup_pose(shelf_layer_frame_id,
                                                                                self.kr.get_object_frame_id(x)).pose.position.x)):
-                    for j in range(2 if i <= 1 else 2):
+                    for j in range(1 if i <= 1 else 1):
                         facing_frame_id = self.kr.get_object_frame_id(facing_id)
                         if lookup_pose('map', facing_frame_id).pose.position.z > 0.6:
                             object_class = self.kr.get_object_of_facing(facing_id)

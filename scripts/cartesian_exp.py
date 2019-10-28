@@ -96,9 +96,9 @@ class Plan(object):
 
         self.reset()
 
-        # self.gripper.home()
+        self.gripper.home()
         raw_input('press a key')
-        # self.gripper.grasp(5)
+        self.gripper.grasp(5)
         raw_input('press a key')
         # if(gripper_piv):
         #     self.gripper.gripper_pivoting()
@@ -107,7 +107,7 @@ class Plan(object):
 
         self.add_tulip_in_finger()
 
-        sign = -1
+        sign = 1
 
         self.move(sign*0.2, 0, 0)
         self.move(sign*-0.2, 0, 0)
@@ -123,13 +123,14 @@ class Plan(object):
 
         self.rotate([0, 1, 0], sign*pi / 4)
 
-        self.rotate([1, 0, 0], sign*pi / 4)
-        self.rotate([1, 0, 0], sign*-pi / 4)
+        # self.rotate([1, 0, 0], sign*pi / 4)
+        # self.rotate([1, 0, 0], sign*-pi / 4)
 
 
         self.rotate([0, 1, 0], sign*-pi / 4)
 
         self.reset()
+
 
         raw_input('open gripper?')
         self.gripper.home()
