@@ -1,7 +1,7 @@
 <launch>
-  <arg name="start_donbot" default="false" />
+  <arg name="start_donbot" default="true" />
 
-  <include file="$(find iai_donbot_bringup)/launch/bringup_donbot.launch" if="$(arg start_donbot)" />
+  <include file="$(find iai_donbot_bringup)/launch/donbot.launch" if="$(arg start_donbot)" />
 
   <include file="$(find arrina_rooming_in)/launch/rooming_in.launch" />
 </launch>

@@ -296,6 +296,8 @@ class Plan(object):
                 self.giskard.add_box(object_name, [d, w, h], pose=base_pose)
                 print('spawned {}'.format(object_name))
 
+            if i == 1:
+                self.giskard.allow_all_collisions()
             self.start_config()
             if i == 1:
                 planning_time_recorder.reset()
@@ -363,7 +365,7 @@ class Plan(object):
                 not self.goal_reached(goal2, object_name, goal_angle):
             print('no solution found; stopping test')
             return 'end'
-        self.gripper.grasp(0)
+        # self.gripper.grasp(0)
         self.gripper.home()
         self.giskard.detach_object(object_name)
         # self.giskard.remove_object(object_name)
@@ -431,10 +433,10 @@ def pick_and_place_shelf():
     # for start_angle, goal_angle, height in product(start_angles, goal_angles, table_heights):
     plan.giskard.clear_world()
     for start_angle, goal_angle, height in [
-        (None, None, 1.31),
-        (None, None, 0.93),
-        (None, None, 0.6),
-        (None, None, 0.2),
+        (-np.pi/8, None, 1.31),
+        # (None, None, 0.93),
+        # (None, None, 0.6),
+        # (None, None, 0.2),
     ]:
         print('executing {} {} {}'.format(start_angle, goal_angle, height))
         if start_angle == np.pi / 4 and goal_angle == 0.0:
@@ -460,5 +462,5 @@ def pick_and_place_shelf():
 
 rospy.init_node('markos_demo')
 planning_time_recorder = PlanningTimeRecorder()
-# pick_and_place_shelf()
-pick_and_place_table()
+pick_and_place_shelf()
+# pick_and_place_table()

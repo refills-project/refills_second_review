@@ -1,0 +1,50 @@
+<launch>
+  <arg name="with_aggregator" default="False" />
+
+  <param name="/use_sim_time" value="false"/>
+  <include file="$(find iai_donbot_bringup)/launch/donbot_with_sun_fingers.launch" />
+
+  <!-- <arg name="navigation_map" default="$(find iai_refills_lab)/maps/refills_lab.yaml" /> -->
+  <!--arg name="navigation_map" default="$(find iai_maps)/maps/dm_karlsruhe_20190331.yaml" /-->
+
+  <!-- <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"> -->
+    <!-- <param name="use_tf_static" value="false"/> -->
+  <!-- </node> -->
+  <!-- <include file="$(find iai_donbot_description)/launch/upload_with_refills_finger.launch"/> -->
+  <!-- <node name="map_server" pkg="map_server" type="map_server" args="$(arg navigation_map)" /> -->
+  <!-- <include file="$(find iai_donbot_bringup)/launch/amcl_omni.launch"/> -->
+  <!-- <include file="$(find iai_donbot_bringup)/launch/omnidrive.launch"/> -->
+  <!-- <include file="$(find iai_donbot_bringup)/launch/omni_pose_follower.launch"/> -->
+  <!-- <include file="$(find iai_donbot_bringup)/launch/bringup_hokuyo.launch"/> -->
+  <!-- <include file="$(find omni_teleop)/launch/ds4_teleop.launch"/> -->
+  <!-- <node name="fake_soft_runstop" pkg="iai_donbot_bringup" type="fake_runstop.sh"/> -->
+
+  <!-- Bring together the different joint state messages --> 
+  <!-- <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" output="screen">
+    <rosparam param="source_list">
+    - base/joint_states
+    - arm/joint_states
+    - wsg_50_driver/joint_states
+    - refills_finger/joint_states
+    </rosparam>
+    <rosparam param="zeros">
+    'odom_x_joint': 0.0
+    'odom_y_joint': 0.0
+    'odom_z_joint': 0.0
+    'gripper_base_gripper_left_joint': 0.0
+    'gripper_joint': 0.0
+    </rosparam>
+
+    <param name="rate" value="120"/>
+    <param name="use_gui" value="False"/>
+
+  </node> -->
+
+  <!-- <include file="$(find iai_donbot_sim)/launch/refills_finger_hacks.launch"/> -->
+  <!-- <include file="$(find iai_donbot_bringup)/launch/bringup_ur5.launch"/> -->
+  <!-- <include file="$(find iai_donbot_bringup)/launch/bringup_cameras.launch"/> -->
+  <!-- <include file="$(find iai_donbot_bringup)/launch/bringup_gripper.launch"/> -->
+
+  <!-- <include file="$(find iai_donbot_bringup)/launch/aggregator.launch" if="$(arg with_aggregator)" /> -->
+
+</launch>

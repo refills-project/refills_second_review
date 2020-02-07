@@ -1,6 +1,7 @@
 <launch>
-  <arg name="json_file" default="$(find refills_second_review)/data/donbot_bremen/19_shelves_who_work.yaml" />
-  <arg name="owl_file" default="$(find refills_second_review)/data/donbot_bremen/19_shelves_pp_pp.owl" />
+  <arg name="json_file" default="$(find refills_second_review)/data/donbot_bremen/old_data/19_shelves.yaml" />
+  <arg name="owl_file" default="$(find refills_second_review)/data/donbot_bremen/old_data/19_shelves_pp_pp.owl" />
+  <!-- <arg name="owl_file" default="/home/arrina/rosout_logs/belief_state_2019-12-19-10-25-19.owl/beliefstate.owl" /> -->
   
   <!-- <arg name="json_file" default="$(find refills_second_review)/data/donbot_karlsruhe/partial01.yaml" /> -->
   <!-- <arg name="owl_file" default="$(find refills_second_review)/data/donbot_karlsruhe/partial01_pp_pp.owl" /> -->
