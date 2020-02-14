@@ -6,11 +6,11 @@ import rospkg
 from arrina_rooming_in.post_processing import PostProcessing
 
 if __name__ == '__main__':
-    # setup
     rospy.init_node('kb')
-    # path_to_json = '{}/data/donbot_bremen/19_shelves.json'.format(rospkg.RosPack().get_path('refills_second_review'))
-    filename = '{}/data/donbot_bremen/beliefstate_pp.owl'.format(rospkg.RosPack().get_path('refills_second_review'))
+    filename = '{}/data/donbot_bremen/test_scan_pp'.format(rospkg.RosPack().get_path('refills_second_review'))
     my_pp = PostProcessing('', filename)
+    my_pp.kb.start_tf_logging()
+    rospy.sleep(2)
 
     # putting missing properties
     my_pp.assert_missing_shelf_props(37, 1.6, 6, "light")
@@ -20,5 +20,7 @@ if __name__ == '__main__':
 
 
     # flusing out
-    # my_pp.correct_shelf_poses()
+    my_pp.correct_shelf_poses()
+    rospy.sleep(2)
+    my_pp.kb.stop_tf_logging()
     my_pp.export_owl()
