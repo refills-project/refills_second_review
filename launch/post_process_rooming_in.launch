@@ -1,9 +1,8 @@
 <launch>
   <include file="$(find knowrob_refills)/launch/map.launch" >
-    <!-- <arg name="semantic_map" value="package://refills_second_review/data/donbot_bremen/test_scan_pp" /> -->
-    <arg name="semantic_map" value="/tmp/moved_shelves_pp.owl" />
+    <arg name="semantic_map" value="package://refills_second_review/data/donbot_augsburg/integration_week" />
   </include>
 
-  <arg name="map_file" default="$(find iai_refills_lab)/maps/refills_lab.yaml" />
+  <arg name="map_file" default="$(find iai_maps)/maps/refills_integration_week.yaml" />
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 </launch>
