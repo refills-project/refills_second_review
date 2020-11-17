@@ -24,7 +24,7 @@
     <node pkg="giskardpy" type="interactive_marker.py" name="giskard_interactive_marker" output="screen">
         <rosparam param="enable_self_collision">False</rosparam>
         <rosparam param="interactive_marker_chains">
-            - [odom, gripper_tool_frame]
+            - [base_footprint, gripper_tool_frame]
             - [odom, base_footprint]
             <!-- - [ur5_shoulder_link, camera_link] -->
         </rosparam>

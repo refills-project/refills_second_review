@@ -1,6 +1,6 @@
 <launch>
   <include file="$(find knowrob_refills)/launch/map.launch" >
-    <arg name="semantic_map" value="package://refills_second_review/data/donbot_augsburg/integration_week" />
+    <arg name="semantic_map" value="package://refills_second_review/data/donbot_augsburg/scan2" />
   </include>
 
   <arg name="map_file" default="$(find iai_maps)/maps/refills_integration_week.yaml" />

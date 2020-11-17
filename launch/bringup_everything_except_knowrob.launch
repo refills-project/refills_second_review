@@ -1,9 +1,9 @@
 <launch>
 
-  <include file="$(find iai_donbot_bringup)/launch/donbot_with_sun_fingers.launch" />
+  <!-- <include file="$(find iai_donbot_bringup)/launch/donbot_with_sun_fingers.launch" /> -->
 
   <arg name="json_file" default="$(find refills_second_review)/data/donbot_bremen/old_data/19_shelves_who_work.yaml" />
-  <arg name="owl_file" default="$(find refills_second_review)/data/donbot_bremen/old_data/19_shelves_pp_pp.owl" />
+  <arg name="owl_file" default="/home/simon/refills_ws/src/refills_second_review/data/donbot_bremen/old_data/19_shelves_pp_pp.owl" />
   <!-- <arg name="json_file" default="$(find refills_second_review)/data/donbot_augsburg/scan2_pp/order.yaml" /> -->
   <!-- <arg name="owl_file" default="$(find refills_second_review)/data/donbot_augsburg/scan2_pp" /> -->
   <!-- <arg name="owl_file" default="$(find refills_second_review)/data/donbot_bremen/scan_with_empty_facings/belief_state.owl" /> -->
@@ -11,14 +11,14 @@
   <arg name="rgb_topic" default="/refills_wrist_camera/image_raw" />
   <arg name="realsense_topic" default="/rs_camera/color/camera_info" />
 
-  <include file="$(find iai_donbot_bringup)/launch/cameras.launch"/>
+  <!-- <include file="$(find iai_donbot_bringup)/launch/cameras.launch"/> -->
  
-  <include file="$(find refills_second_review)/launch/giskardpy_donbot.launch"/>
+  <!-- <include file="$(find refills_second_review)/launch/giskardpy_donbot.launch"/> -->
 
-  <include file="$(find knowrob_refills)/launch/knowrob_refills.launch"/>
+  <!-- <include file="$(find knowrob_refills)/launch/knowrob_refills.launch"/> -->
 
-  <include file="$(find barcode_finder)/launch/barcode_finder.launch"/>
-  <include file="$(find separator_marker_detector)/launch/detector.launch"/>
+  <!-- <include file="$(find barcode_finder)/launch/barcode_finder.launch"/> -->
+  <!-- <include file="$(find separator_marker_detector)/launch/detector.launch"/> -->
 
 <!--   <include file="$(find refills_perception_interface)/launch/interface.launch">
     <arg name="initial_beliefstate_owl" value="$(arg owl_file)" />
@@ -31,12 +31,14 @@
   <param name="brain/trajectory_sample_period" type="double" value="0.05" />
   <param name="perception_interface/initial_beliefstate" value="$(arg owl_file)" />
   <param name="perception_interface/path_to_json" value="$(arg json_file)" />
-  <param name="perception_interface/robosherlock_sim" value="False" />
+  <param name="perception_interface/robosherlock_sim" value="True" />
   <param name="perception_interface/ceiling_height" value="2" />
-  <param name="perception_interface/robot" value="donbot" />
+  <param name="perception_interface/robot" value="kmriiwa" />
   <param name="perception_interface/rgb_topic" value="/refills_wrist_camera/image_raw" />
   <param name="perception_interface/realsense_topic" value="/rs_camera/color/camera_info" />
  
   <!-- <node pkg="refills_second_review" type="shelf_name_visualizer" name="shelf_name_visualizer" /> -->
+
+  <include file="$(find rs_refills)/launch/rs_refills.launch"/>
 
 </launch>
