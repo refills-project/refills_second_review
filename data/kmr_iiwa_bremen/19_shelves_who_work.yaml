@@ -1,7 +1,27 @@
-http://knowrob.org/kb/dm-market.owl#DMShelfW100_BRFNJTMX:
-  side: right
+2:
+  side: left
   via-points: []
   starting-point: None
+  hack: false
+1:
+  side: left
+  via-points: []
+  starting-point: 2
+  hack: false
+19:
+  side: right
+  via-points: []
+  starting-point: 1
+  hack: false
+17:
+  side: left
+  via-points: []
+  starting-point: 19
+  hack: false
+16:
+  side: left
+  via-points: []
+  starting-point: 17
   hack: false
 # http://knowrob.org/kb/dm-market.owl#DMShelfW100_XWEYCFKB:
 #   side: right

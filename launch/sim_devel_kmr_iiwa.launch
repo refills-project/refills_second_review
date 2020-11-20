@@ -1,9 +1,9 @@
 <launch>
-  <!-- <arg name="json_file" default="$(find refills_second_review)/data/donbot_bremen/old_data/19_shelves.yaml" /> -->
-  <!-- <arg name="owl_file" default="$(find refills_second_review)/data/donbot_bremen/old_data/19_shelves_pp_pp.owl" /> -->
+  <!-- <arg name="order_yaml" default="$(find refills_second_review)/data/donbot_bremen/old_data/19_shelves.yaml" /> -->
+  <!-- <arg name="initial_beliefstate" default="$(find refills_second_review)/data/donbot_bremen/old_data/19_shelves_pp_pp.owl" /> -->
 
-  <arg name="owl_file" default="/home/arrina/mongo_logs/2020-11-12_11-26-44_pp/roslog" />
-  <arg name="json_file" default="$(find refills_second_review)/data/kmr_iiwa_bremen/19_shelves_who_work.yaml" />
+  <arg name="initial_beliefstate" default="$(optenv HOME)/mongo_logs/2020-11-19_21-57-45_pp/roslog" />
+  <arg name="order_yaml" default="$(find refills_second_review)/data/kmr_iiwa_bremen/19_shelves_who_work.yaml" />
   
   <arg name="ceiling_height" default="2" />
   <arg name="map_file" default="$(find iai_refills_lab)/maps/refills_lab_kmr_iiwa.yaml" />
@@ -15,8 +15,8 @@
   <!-- <include file="$(find knowrob_refills)/launch/knowrob_refills.launch"/> -->
 
   <param name="brain/trajectory_sample_period" type="double" value="0.05" />
-  <param name="perception_interface/initial_beliefstate" value="$(arg owl_file)" />
-  <param name="perception_interface/path_to_json" value="$(arg json_file)" />
+  <param name="perception_interface/initial_beliefstate" value="$(arg initial_beliefstate)" />
+  <param name="perception_interface/order_yaml" value="$(arg order_yaml)" />
   <param name="perception_interface/robosherlock_sim" value="True" />
   <param name="perception_interface/ceiling_height" value="2" />
   <param name="perception_interface/robot" value="kmriiwa" />
@@ -24,8 +24,8 @@
   <param name="perception_interface/realsense_topic" value="/rs_camera/color/camera_info" />
 
 <!--   <include file="$(find refills_perception_interface)/launch/interface.launch">
-    <arg name="initial_beliefstate_owl" value="$(arg owl_file)" />
-    <arg name="json_file" value="$(arg json_file)" />
+    <arg name="initial_beliefstate_owl" value="$(arg initial_beliefstate)" />
+    <arg name="order_yaml" value="$(arg order_yaml)" />
     <arg name="robosherlock_sim" value="true" />
     <arg name="ceiling_height" value="$(arg ceiling_height)" />
   </include> -->

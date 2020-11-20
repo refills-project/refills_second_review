@@ -14,7 +14,7 @@ from tf.transformations import quaternion_about_axis
 
 from giskardpy.python_interface import GiskardWrapper
 from giskardpy.tfwrapper import lookup_pose, np_to_kdl, msg_to_kdl, kdl_to_quaternion
-from giskardpy.utils import to_joint_state_dict2
+from giskardpy.utils import to_joint_state_position_dict
 from refills_second_review.gripper import Gripper
 from utils_for_tests import compare_poses
 
@@ -165,7 +165,7 @@ class Plan(object):
 
     def get_joint_state(self):
         js = rospy.wait_for_message('/joint_states', JointState)
-        return to_joint_state_dict2(js)
+        return to_joint_state_position_dict(js)
 
     def goal_reached(self, goal, tip, angle):
         current_pose = lookup_pose(goal.header.frame_id, tip)

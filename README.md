@@ -19,3 +19,6 @@ cd ..                                      # go to workspace directory
 catkin build                               # build packages
 source ~/refills_ws/devel/setup.bash       # source new overlay
 ```
+
+
+touch universal_robot/ur_kinematics/CATKIN_IGNORE
