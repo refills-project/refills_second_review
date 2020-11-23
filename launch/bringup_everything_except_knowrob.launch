@@ -2,9 +2,8 @@
 
   <!-- <include file="$(find iai_donbot_bringup)/launch/donbot_with_sun_fingers.launch" /> -->
 
-  <arg name="json_file" default="$(find refills_second_review)/data/donbot_bremen/old_data/19_shelves_who_work.yaml" />
-  <arg name="owl_file" default="/home/simon/refills_ws/src/refills_second_review/data/donbot_bremen/old_data/19_shelves_pp_pp.owl" />
-  <!-- <arg name="json_file" default="$(find refills_second_review)/data/donbot_augsburg/scan2_pp/order.yaml" /> -->
+  <arg name="initial_beliefstate" default="$(optenv HOME)/mongo_logs/2020-11-19_21-57-45_pp/roslog" />
+  <arg name="order_yaml" default="$(find refills_second_review)/data/kmr_iiwa_bremen/19_only.yaml" />  <!-- <arg name="json_file" default="$(find refills_second_review)/data/donbot_augsburg/scan2_pp/order.yaml" /> -->
   <!-- <arg name="owl_file" default="$(find refills_second_review)/data/donbot_augsburg/scan2_pp" /> -->
   <!-- <arg name="owl_file" default="$(find refills_second_review)/data/donbot_bremen/scan_with_empty_facings/belief_state.owl" /> -->
   <arg name="ceiling_height" default="2" />
@@ -29,9 +28,9 @@
     <arg name="robosherlock_sim" value="False" />
   </include> -->
   <param name="brain/trajectory_sample_period" type="double" value="0.05" />
-  <param name="perception_interface/initial_beliefstate" value="$(arg owl_file)" />
-  <param name="perception_interface/path_to_json" value="$(arg json_file)" />
-  <param name="perception_interface/robosherlock_sim" value="True" />
+  <param name="perception_interface/initial_beliefstate" value="$(arg initial_beliefstate)" />
+  <param name="perception_interface/order_yaml" value="$(arg order_yaml)" />
+  <param name="perception_interface/robosherlock_sim" value="False" />
   <param name="perception_interface/ceiling_height" value="2" />
   <param name="perception_interface/robot" value="kmriiwa" />
   <param name="perception_interface/rgb_topic" value="/refills_wrist_camera/image_raw" />

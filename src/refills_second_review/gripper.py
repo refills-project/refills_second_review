@@ -73,3 +73,13 @@ class Gripper(object):
             self.ch_params1_service(ch_msg)
 
 
+if __name__ == '__main__':
+    rospy.init_node('gripper_test')
+    gripper = Gripper()
+    rospy.sleep(1)
+    gripper.home()
+    # raw_input('press a key')
+    # gripper.grasp(5)
+    # raw_input('press a key')
+    print('going into pivoting')
+    # gripper.gripper_pivoting()
