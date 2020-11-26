@@ -1,5 +1,8 @@
+from __future__ import division
+
 import rospy
 from actionlib import SimpleActionClient
+from iai_wsg_50_msgs.msg import PositionCmd
 from slipping_control_msgs.msg import HomeGripperAction, SlippingControlAction, GraspAction, HomeGripperGoal, \
     GraspGoal, SlippingControlGoal
 from slipping_control_msgs.srv import GetState, ChLSParams, ChLSParamsRequest
@@ -14,12 +17,15 @@ class Gripper(object):
         self.get_state_service = rospy.ServiceProxy('/wsg50/slipping_control/get_state', GetState)
         self.ch_params0_service = rospy.ServiceProxy('/wsg50/ls_0/change_params', ChLSParams)
         self.ch_params1_service = rospy.ServiceProxy('/wsg50/ls_1/change_params', ChLSParams)
+        rospy.sleep(0.5)
+        rospy.loginfo('connected to gripper driver')
 
     def home(self):
         if self.active:
             self.home_action.send_goal_and_wait(HomeGripperGoal())
+            rospy.loginfo('gripper homed')
 
-    def grasp(self, force):
+    def grasp(self, force=5):
         if self.active:
             goal = GraspGoal()
             goal.desired_force = force
@@ -71,6 +77,28 @@ class Gripper(object):
             ch_msg.k = -1
             self.ch_params0_service(ch_msg)
             self.ch_params1_service(ch_msg)
+
+class GripperWSG50(object):
+    def __init__(self):
+        self.position_pub = rospy.Publisher('/wsg_50_driver/goal_position', PositionCmd, queue_size=10)
+        self.min = 0.02
+        self.max = 0.1
+
+    def mm_to_m(self, mm):
+        return mm/1000.
+
+    def m_to_mm(self, m):
+        return m*1000.
+
+    def send_cmd(self, goal_position):
+        goal = PositionCmd()
+        goal.pos = self.m_to_mm(goal_position)
+        self.position_pub.publish(goal)
+
+    def home(self):
+        self.send_cmd(self.max)
+
+
 
 
 if __name__ == '__main__':
