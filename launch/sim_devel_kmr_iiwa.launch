@@ -2,8 +2,10 @@
   <!-- <arg name="order_yaml" default="$(find refills_second_review)/data/donbot_bremen/old_data/19_shelves.yaml" /> -->
   <!-- <arg name="initial_beliefstate" default="$(find refills_second_review)/data/donbot_bremen/old_data/19_shelves_pp_pp.owl" /> -->
 
-  <arg name="initial_beliefstate" default="$(optenv HOME)/mongo_logs/2020-11-19_21-57-45_pp/roslog" />
-  <arg name="order_yaml" default="$(find refills_second_review)/data/kmr_iiwa_bremen/19_only.yaml" />
+  <arg name="initial_beliefstate" default="$(optenv HOME)/mongo_logs/2020-11-19_21-57-45_pp_pp_pp/roslog" />
+  <!-- <arg name="order_yaml" default="$(find refills_second_review)/data/kmr_iiwa_bremen/19_only.yaml" /> -->
+  <arg name="order_yaml" default="$(find refills_second_review)/data/kmr_iiwa_bremen/5_shelves.yaml" />
+  <!-- <arg name="order_yaml" default="$(find refills_second_review)/data/kmr_iiwa_bremen/19_shelves.yaml" /> -->
   
   <arg name="ceiling_height" default="2" />
   <arg name="map_file" default="$(find iai_refills_lab)/maps/refills_lab_kmr_iiwa.yaml" />

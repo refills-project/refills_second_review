@@ -15,7 +15,39 @@
   hack: false
 17:
   side: left
-  via-points: []
+  via-points: 
+    - header: 
+        seq: 0
+        stamp: 
+          secs: 0.0
+          nsecs:         0
+        frame_id: 'map'
+      pose: 
+        position: 
+          x: 2.5
+          y: 0.25
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 1
+          w: 0.0
+    - header: 
+        seq: 0
+        stamp: 
+          secs: 0.0
+          nsecs:         0
+        frame_id: 'map'
+      pose: 
+        position: 
+          x: 2.5
+          y: 0.25
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: -0.711
+          w: 0.703
   starting-point: 19
   hack: false
 16:
