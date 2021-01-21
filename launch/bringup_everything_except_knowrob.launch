@@ -3,8 +3,8 @@
   <!-- <include file="$(find iai_donbot_bringup)/launch/donbot_with_sun_fingers.launch" /> -->
 
   <arg name="initial_beliefstate" default="$(optenv HOME)/mongo_logs/2020-11-19_21-57-45_pp_pp_pp/roslog" />
-  <arg name="order_yaml" default="$(find refills_second_review)/data/kmr_iiwa_bremen/19_only.yaml" />  
-  <!-- <arg name="order_yaml" default="$(find refills_second_review)/data/kmr_iiwa_bremen/5_shelves.yaml" />   -->
+  <!-- <arg name="order_yaml" default="$(find refills_second_review)/data/kmr_iiwa_bremen/19_only.yaml" />   -->
+  <arg name="order_yaml" default="$(find refills_second_review)/data/kmr_iiwa_bremen/5_shelves.yaml" />  
   <arg name="ceiling_height" default="2" />
   <arg name="rgb_topic" default="/refills_wrist_camera/image_raw" />
   <arg name="realsense_topic" default="/rs_camera/color/camera_info" />

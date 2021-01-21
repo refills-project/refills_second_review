@@ -50,33 +50,8 @@
           w: 0.703
   starting-point: 19
   hack: false
-16:
-  side: left
-  via-points: []
-  starting-point: 17
-  hack: false
-# http://knowrob.org/kb/dm-market.owl#DMShelfW100_XWEYCFKB:
-#   side: right
+# 16:
+#   side: left
 #   via-points: []
-#   starting-point: 'http://knowrob.org/kb/dm-market.owl#DMShelfW100_PLCORHKS'
-# http://knowrob.org/kb/dm-market.owl#DMShelfW100_XCBZVSEM:
-  # side: right
-  # via-points: []
-    # - header: 
-    #     seq: 0
-    #     stamp: 
-    #       secs: 0.0
-    #       nsecs:         0
-    #     frame_id: 'map'
-    #   pose: 
-    #     position: 
-    #       x: 2.98561191559
-    #       y: 0.198815107346
-    #       z: 0.0
-    #     orientation: 
-    #       x: 0.0
-    #       y: 0.0
-    #       z: -0.655876801993
-    #       w: 0.754867949119
-  # starting-point: None
-  # starting-point: 'http://knowrob.org/kb/dm-market.owl#DMShelfW100_PLCORHKS'
+#   starting-point: 17
+#   hack: false
