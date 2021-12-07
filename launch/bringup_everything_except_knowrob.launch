@@ -2,21 +2,21 @@
 
   <!-- <include file="$(find iai_donbot_bringup)/launch/donbot_with_sun_fingers.launch" /> -->
 
-  <arg name="initial_beliefstate" default="$(optenv HOME)/mongo_logs/2020-11-19_21-57-45_pp_pp_pp/roslog" />
+  <arg name="initial_beliefstate" default="$(optenv HOME)/mongo_logs/2020-11-19_21-57-45_pp_pp_pp_pp/roslog" />
   <!-- <arg name="order_yaml" default="$(find refills_second_review)/data/kmr_iiwa_bremen/19_only.yaml" />   -->
-  <arg name="order_yaml" default="$(find refills_second_review)/data/kmr_iiwa_bremen/5_shelves.yaml" />  
+  <arg name="order_yaml" default="$(find refills_second_review)/data/donbot_bremen/kmr_map/5_shelves.yaml" />
   <arg name="ceiling_height" default="2" />
   <arg name="rgb_topic" default="/refills_wrist_camera/image_raw" />
   <arg name="realsense_topic" default="/rs_camera/color/camera_info" />
 
   <!-- <include file="$(find iai_donbot_bringup)/launch/cameras.launch"/> -->
  
-  <!-- <include file="$(find refills_second_review)/launch/giskardpy_donbot.launch"/> -->
+  <include file="$(find refills_second_review)/launch/giskardpy_donbot.launch"/>
 
   <!-- <include file="$(find knowrob_refills)/launch/knowrob_refills.launch"/> -->
 
   <!-- <include file="$(find barcode_finder)/launch/barcode_finder.launch"/> -->
-  <!-- <include file="$(find separator_marker_detector)/launch/detector.launch"/> -->
+  <include file="$(find separator_marker_detector)/launch/detector.launch"/>
 
 <!--   <include file="$(find refills_perception_interface)/launch/interface.launch">
     <arg name="initial_beliefstate_owl" value="$(arg owl_file)" />
@@ -31,7 +31,8 @@
   <param name="perception_interface/order_yaml" value="$(arg order_yaml)" />
   <param name="perception_interface/robosherlock_sim" value="False" />
   <param name="perception_interface/ceiling_height" value="2" />
-  <param name="perception_interface/robot" value="kmriiwa" />
+  <param name="perception_interface/robot" value="donbot" />
+  <param name="perception_interface/cam_focus" value="0.5" />
   <param name="perception_interface/rgb_topic" value="/refills_wrist_camera/image_raw" />
   <param name="perception_interface/realsense_topic" value="/rs_camera/color/camera_info" />
  
